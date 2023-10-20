@@ -12,77 +12,78 @@
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/7529/7529519.png" type="image/png">
 </head>
 <header>
+    <nav>
     <h1>Gyroo</h1>
     <li><a href="index.html">Inicio</a></li>
     <li><a href="login.html">Registrarse</a></li>
+    </nav>
 </header>
 <body>
     <!--hacer una seccion de hombres y otra de mujeres, para que se vea agradable a la vista y organizado, en lugar de todo revuelto.-->
+<div id="Principal">
 <section>
+    Hablar sobre la empresa, aunque debo adelantar lo mas posible para la proxima clase para preguntar si se puede
+    poner esta parte en otra pagina de carga asi como el login.
+</section>
+</div>
+<div id="Productos">
+<section>
+        <h2>Productos que te puedan interesar</h2>
+    <!--imagenes de ropa en venta. Poner unas 12 o más imagenes con sus respectivos precios.-->
+    <!--Tambien buscar poner una opcion de compra de ese producto (carrito de compras)-->
     <img src="https://img.freepik.com/psd-gratis/vista-frontal-camiseta-blanca-aislada_125540-1194.jpg?size=626&ext=jpg&ga=GA1.1.456937388.1697227142" alt="imagen camisa negra" height="167">
     <img src="https://img.freepik.com/foto-gratis/maqueta-diseno-superior-moda-presentada-percha-madera_460848-13965.jpg?size=626&ext=jpg&ga=GA1.1.456937388.1697227142&semt=sph" alt="imagen de una blusa" height="167">
     <img src="https://img.freepik.com/foto-gratis/camisetas-blancas-espacio-copia-sobre-fondo-gris_53876-104920.jpg?size=626&ext=jpg&ga=GA1.1.456937388.1697227142&semt=sph" alt="imagen de camisa blanca" height="167">
 </section>
+</div>
+<div id="Reseñas">
 <section>
-    <nav>
-        <h2>Productos que te puedan interesar</h2>
-    imagenes de ropa en venta. Poner unas 12 o más imagenes con sus respectivos precios.
-    <!--Tambien buscar poner una opcion de compra de ese producto (carrito de compras)-->
-    </nav>
-</section>
-<section>
-    <nav>
         <h2>Reseñas de clientes</h2>
         <form>
         <fieldset>
-           <nav>
             <h4> Eliga de 1 a 5 estrellas como le 
                 parecieron nuestros servicios y productos.</h4>
-           </nav>
-            <nav>
-                <fieldset>
-            <label for="1-estrella">⭐</label>
-                        <input type="radio" name="data-calificacion" id="1-estrella" value="⭐">
-                </fieldset>
-                <fieldset>
-            <label for="2-estrella">⭐⭐</label>
-                        <input type="radio" name="data-calificacion" id="2-estrella" value="⭐⭐">
-                </fieldset>
-                <fieldset>
-            <label for="3-estrella">⭐⭐⭐</label>
-                        <input type="radio" name="data-calificacion" id="3-estrella" value="⭐⭐⭐">
-                </fieldset>   
-                <fieldset>    
-            <label for="4-estrella">⭐⭐⭐⭐</label> 
-                        <input type="radio" name="data-calificacion" id="4-estrella" value="⭐⭐⭐⭐">
-                </fieldset> 
-                <fieldset>
-            <label for="5-estrella">⭐⭐⭐⭐⭐</label>
-                        <input type="radio" name="data-calificacion" id="5-estrella" value="⭐⭐⭐⭐⭐">
-                </fieldset>
-            </nav>             
+        <fieldset>
+            <label for="1-estrella">1</label><span>⭐</span>
+            <input type="radio" name="data-calificacion" id="1-estrella" value="1">
+            
+            <br><br>
+            <label for="2-estrella">2</label><span>⭐</span>
+            <input type="radio" name="data-calificacion" id="2-estrella" value="2">
+            
+            <br><br>
+            <label for="3-estrella">3</label><span>⭐</span>
+            <input type="radio" name="data-calificacion" id="3-estrella" value="3">
+            
+            <br><br>
+            <label for="4-estrella">4</label><span>⭐</span>
+            <input type="radio" name="data-calificacion" id="4-estrella" value="4">
+            
+            <br><br>
+            <label for="5-estrella">5</label><span>⭐</span>
+            <input type="radio" name="data-calificacion" id="5-estrella" value="5">
         </fieldset>
         <fieldset>
-            <nav>
             <h4>Escribe tu reseña:</h4>
             <label for="comentario"></label>
             <textarea rows="10" cols="45" placeholder="Comentario..." id="comentario"></textarea>
-            </nav>
         </fieldset>
-        <fieldset>
+        <br><br>
             <input type="submit" value="Subir comentario">
         </fieldset>
         </form>
         <!--Poner un apartado donde salgan los comentarios de clientes y en donde tambien pueda dejar sus comentarios.-->
         <!--De alguna manera conectar en boton de comentar a el de registro si es que no esta registrado.-->
-    </nav>
 </section>
+</div>
 </body>
 <footer>
+    <div id="Redes sociales">
     <section>
         <li>instagram</li>
         <li>x</li>
         <li>facebook</li>
     </section>
+    </div>
 </footer>
 </html>
