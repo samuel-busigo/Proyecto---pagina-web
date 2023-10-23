@@ -9,7 +9,7 @@
     <meta name="keywords" content="Prendas, ropa, camisas, pantalones, chaquetas, zapatos, camisetas, bermudas.">
    
     <title>Gyroo - Tienda de ropa online</title>
-    <link rel="icon" href="https://th.bing.com/th/id/OIG.0bZkXLWjdY.pNTXJ2JJf?w=270&h=270&c=6&r=0&o=5&pid=ImgGn" type="image/png">
+    <link rel="icon" href="image/icon_page.jpg" type="image/png">
     <link rel="stylesheet" href="style/estilosindex.css">
 </head>
 <body>
@@ -18,10 +18,12 @@
             <h1>Gyroo</h1>
         </center>
     </div>
-<header>
+<header class="header">
+    <!--ver si al index lo hago navegacion interna o como esta ahora. -->
     <nav class="menu">
         <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Nosotros</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#productos">Productos</a>
         <a href="#Reseñas">Reseñas</a>
         <a href="login.html">Registrarse</a>
         <a href="inicio-sesion.html">Iniciar sesion</a>
@@ -32,12 +34,14 @@
     <img src="" alt="Banner">
 </div>
 
+<div class="separador"></div>
+
 <br><br>
 <!--https://cdn-icons-png.flaticon.com/128/7529/7529519.png-->
 <!--ver si esta imagen queda oficial en el logo o la que esta puesta que dice gyroo.-->
 
     <!--hacer una seccion de hombres y otra de mujeres, para que se vea agradable a la vista y organizado, en lugar de todo revuelto.-->
-<div id="Principal">
+<div id="nosotros">
 <section>
     <!--Cambiar esta parte a otra pagina de carga.-->
     <center><font size="4"><p><b>Gyroo</b> una empresa <b>enfocada</b> en la moda y el diseño.</p></font>
@@ -45,7 +49,7 @@
 </section>
 </div>
 <br><br>
-<div id="Productos">
+<div id="productos">
 <section>
         <h2>Productos que te puedan interesar</h2>
     <!--imagenes de ropa en venta. Poner unas 12 o más imagenes con sus respectivos precios.-->
@@ -60,7 +64,7 @@
 </section>
 </div>
 <br>
-<div id="Reseñas">
+<div id="reseñas">
 <section>
     <!--hacer cambios aqui en cuanto a orden y tratar que se vea lo mas pequeño sin que quede incomodo de leer o 
         interactuar ya sea en pc y en dispositivos moviles.-->
@@ -106,13 +110,27 @@
 </div>
 </body>
 <br>
-<footer>
-    <div id="redes-sociales">
-    <section>
-        <li>instagram</li>
-        <li>x</li>
-        <li>facebook</li>
-    </section>
+<footer class="footer">
+    <div class="footer-content">
+
+        <div class="footer-logo">
+            <img src="image/logo_footer.jpg" alt="logo" class="footer-logo__image">
+        </div>
+
+        <div class="footer-redes">
+            <a href="#" class="footer-redes__link">
+                <img src="image/instagram_logo.png" alt="instagram" class="footer-redes__image">
+            </a>
+            <a href="#" class="footer-redes__link">
+                <img src="image/twitter_logo.png" alt="x" class="footer-redes__image">
+            </a>
+            <a href="#" class="footer-redes__link">
+                <img src="image/facebook_logo.png" alt="facebook" class="footer-redes__image">
+            </a>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <p class="footer-copyright__text">Todos los Derechos Reservados ©</p>
     </div>
 </footer>
 </html>

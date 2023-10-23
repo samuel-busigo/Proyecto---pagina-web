@@ -1,29 +1,16 @@
-/*Navegación*/
-header{
-    background-color: rgb(45, 96, 115);
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin: 0px;
-
-    position: sticky;
-    top: 0px;
-}
-
-.menu{
-    display: flex;
-    justify-content: center;
-}
-
-.menu a{
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-}
+@import 'navigation.css';
+@import 'banner.css';
+@import 'footer.css';
 
 body{
     margin: 10px 0px;
 }
 
-/*Banner*/
+/*separador*/
+/*el color negro en el separador es mientras tanto.*/
+.separador{
+    border-top: 1px solid black;
+    margin-top: 10px 0px;
+}
+
 
