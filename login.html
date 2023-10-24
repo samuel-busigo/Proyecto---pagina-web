@@ -6,65 +6,51 @@
     <title>Registro</title>
 
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/5645/5645106.png" type="image/png">
+
 </head>
-<header>
-<div id="navegacion-registro"></div>
-    <nav>    
+<header class="header">
+<div id="nombre-empresa" class="seccion-nombre-empresa"></div>    
         <center>
-            <h1>Gyroo</h1>
+            <h1 class="seccion-nombre-empresa__name">Gyroo</h1>
         </center>
-        <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="login.html">Registrarse</a></li>
-        </ul>
-    </nav>
 </div>
 </header>
 <br><br>
-<body> 
-<div id="form-registro">   
-    <form>
-            <fieldset>
-                <legend class="infoPersonal">Registro</legend>
+<body class="body"> 
+<div id="form-registro" class="formulario">   
+    <form class="form-content">
+        <fieldset>
+            <legend class="form-content__info-personal">Registro</legend>
                 <br><br>
-                <label for="id-nombre">Nombres</label><br>
-                <input type="text" name="data-nombre" id="id-nombre" placeholder="Ingrese su nombre" required>
+            <label for="id-nombre">Nombres</label><br>
+            <input type="text" name="data-nombre" id="id-nombre" placeholder="Ingrese su nombre" class="form-content__datos" required>
           
                 <br><br>
-                <label for="id-apellido">Apellidos</label><br>
-                <input type="text" name="data-apellido" id="id-apellido" placeholder="Ingrese sus apellidos" required>
+            <label for="id-apellido">Apellidos</label><br>
+            <input type="text" name="data-apellido" id="id-apellido" placeholder="Ingrese sus apellidos" class="form-content__datos" required>
             
                 <br><br>
-                <label for="id-email">Correo Electronico</label><br>
-                <input type="email" name="data-email" id="id-email" placeholder="Ingrese un correo electronico" required>
+            <label for="id-email">Correo Electronico</label><br>
+            <input type="email" name="data-email" id="id-email" placeholder="Ingrese un correo electronico" class="form-content__datos" required>
 
                 <br><br>
-                <label for="id-password">Contraseña</label><br>
-                <input type="password" name="data-password" id="id-password" placeholder="Ingrese una contraseña" required>
+            <label for="id-password">Contraseña</label><br>
+            <input type="password" name="data-password" id="id-password" placeholder="Ingrese una contraseña" class="form-content__datos" required>
 
                 <br><br>
-                <label for="id-hombre">Hombre</label>
-                <input type="radio" name="data-genero" id="id-hombre" value="Hombre" required>
+            <label for="id-hombre">Hombre</label>
+            <input type="radio" name="data-genero" id="id-hombre" value="Hombre" class="form-content__datos" required>
                 <br><br>
-                <label for="id-mujer">Mujer</label>
-                <input type="radio" name="data-genero" id="id-mujer" value="Mujer" required>
+            <label for="id-mujer">Mujer</label>
+            <input type="radio" name="data-genero" id="id-mujer" value="Mujer" class="form-content__datos" required>
                 
                 <br><br>
-                <a href="index.html">
-                    <input type="button" name="data-button" id="id-button" value="Subir">
-                </a>
-            </fieldset>     
+            <a href="index.html">
+                <input type="button" name="data-button" id="id-button" value="Subir" class="form-content__button">
+            </a>
+        </fieldset>     
     </form>
 </div>
 </body>
-<br><br><br>
-<footer>
-    <div id="Redes sociales">
-        <section>
-            <li>instagram</li>
-            <li>x</li>
-            <li>facebook</li>
-        </section>
-    </div>
-</footer>
+
 </html>

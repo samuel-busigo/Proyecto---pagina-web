@@ -13,4 +13,8 @@ body{
     margin-top: 10px 0px;
 }
 
-
+@media screen and (max-width:480px) {
+    body{
+        margin: 0px;
+    }
+}

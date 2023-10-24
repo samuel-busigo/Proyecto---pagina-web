@@ -1,0 +1,24 @@
+.container_banner{
+    height: 525px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+.container_banner__img{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width:480px) {
+    .container_banner{
+        height: 40vh;
+    }
+    
+    .container_banner__img{
+        width: 100%;
+        height: auto;
+    }
+}

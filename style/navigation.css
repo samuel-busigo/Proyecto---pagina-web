@@ -4,18 +4,59 @@ header{
     text-align: center;
     padding: 10px;
     margin: 0px;
-
     position: sticky;
     top: 0px;
 }
 
-.menu{
+.menu__list{
     display: flex;
-    justify-content: center;
+    justify-content:flex-start;
+    list-style-type: none;
 }
 
-.menu a{
+.menu__item{
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.menu__link{
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 5px 20px;
+}
+
+.menu__item:hover {
+    background-color: rgb(112, 152, 168);
+}
+
+@media screen and (max-width:480px) {
+    
+    .menu__list{
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+        background-color:  rgb(45, 96, 115);
+        position: absolute;
+        right: 0px;
+    }
+
+    .menu-mobile__line{
+        width: 30px;
+        height: 3px;
+        background-color: aliceblue;
+        margin: 5px auto;
+    }
+    
+    .menu__item{
+        border-bottom: 1px solid rgb(38, 49, 49);
+    }
+    
+    .menu-mobile:hover+.menu__list{
+        display: block;
+    }
+
+    
+    .menu__list:not(:hover){
+        display: none;
+    }
 }

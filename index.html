@@ -20,60 +20,76 @@
     </div>
 <header class="header">
     <!--ver si al index lo hago navegacion interna o como esta ahora. -->
+    <!--poner en los enlaces de login y inicio de sesion iconos para que se vea mejor y sea mas limpia la pagina a mi parecer.-->
     <nav class="menu">
-        <a href="index.html">Inicio</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#productos">Productos</a>
-        <a href="#Reseñas">Reseñas</a>
-        <a href="login.html">Registrarse</a>
-        <a href="inicio-sesion.html">Iniciar sesion</a>
+
+        <div class="menu-mobile">
+            <div class="menu-mobile__line"></div>
+            <div class="menu-mobile__line"></div>
+            <div class="menu-mobile__line"></div>
+        </div>
+
+        <ul class="menu__list">
+            <li class="menu__item">
+                <a href="index.html" class="menu__link">Inicio</a>
+            </li>
+            <li class="menu__item">
+                <a href="#nosotros" class="menu__link">Nosotros</a>           
+            </li>
+            <li class="menu__item">
+                <a href="#productos" class="menu__link">Productos</a            
+            </li>
+            <li class="menu__item">
+                <a href="#reseñas" class="menu__link">Reseñas</a>                
+            </li>
+            <li class="menu__item">
+                <a href="login.html" class="menu__link">Registrarse</a>              
+            </li>
+            <li class="menu__item">
+                <a href="inicio-sesion.html" class="menu__link">Iniciar sesion</a>
+            </li>
+        </ul>
     </nav>
 </header>
 
-<div class="container-banner">
-    <img src="" alt="Banner">
+<div class="container_banner">
+    <img src="image/banner.jpg" alt="Banner" class="container_banner__img">
 </div>
 
 <div class="separador"></div>
 
 <br><br>
-<!--https://cdn-icons-png.flaticon.com/128/7529/7529519.png-->
-<!--ver si esta imagen queda oficial en el logo o la que esta puesta que dice gyroo.-->
 
     <!--hacer una seccion de hombres y otra de mujeres, para que se vea agradable a la vista y organizado, en lugar de todo revuelto.-->
-<div id="nosotros">
-<section>
+<div id="nosotros" class="seccion-nosotros">
     <!--Cambiar esta parte a otra pagina de carga.-->
+    <!--cambiar a una imagen descargada para no poner link. -->
     <center><font size="4"><p><b>Gyroo</b> una empresa <b>enfocada</b> en la moda y el diseño.</p></font>
-    <img src="https://th.bing.com/th/id/OIG.CRRspcfYyEfnXb8bIRNm?w=270&h=270&c=6&r=0&o=5&pid=ImgGn" alt="icono-gyroo" width="273px"></center>
-</section>
+    <img src="https://th.bing.com/th/id/OIG.CRRspcfYyEfnXb8bIRNm?w=270&h=270&c=6&r=0&o=5&pid=ImgGn" alt="icono-gyroo" width="273px" class="seccion-nosotros__logo"></center>
 </div>
 <br><br>
-<div id="productos">
-<section>
-        <h2>Productos que te puedan interesar</h2>
+<div id="productos" class="seccion-productos">
+        <h2 class="seccion-productos__titulo">Productos que te puedan interesar</h2>
     <!--imagenes de ropa en venta. Poner unas 12 o más imagenes con sus respectivos precios.-->
     <!--Tambien buscar poner una opcion de compra de ese producto (carrito de compras)-->
     <!--poner "div" en cada imagen y abajo la informacion con el precio.-->
-    <img src="https://img.freepik.com/psd-gratis/vista-frontal-camiseta-blanca-aislada_125540-1194.jpg?size=626&ext=jpg&ga=GA1.1.456937388.1697227142" alt="imagen camisa negra" height="167px">
-    <img src="https://img.freepik.com/foto-gratis/maqueta-diseno-superior-moda-presentada-percha-madera_460848-13965.jpg?size=626&ext=jpg&ga=GA1.1.456937388.1697227142&semt=sph" alt="imagen de una blusa" height="167px">
-    <img src="https://img.freepik.com/foto-gratis/camisetas-blancas-espacio-copia-sobre-fondo-gris_53876-104920.jpg?size=626&ext=jpg&ga=GA1.1.456937388.1697227142&semt=sph" alt="imagen de camisa blanca" height="167px">
+    <img src="https://img.freepik.com/psd-gratis/vista-frontal-camiseta-blanca-aislada_125540-1194.jpg?size=626&ext=jpg&ga=GA1.1.456937388.1697227142" alt="imagen camisa negra" height="167px" class="seccion-productos__producto">
+    <img src="https://img.freepik.com/foto-gratis/maqueta-diseno-superior-moda-presentada-percha-madera_460848-13965.jpg?size=626&ext=jpg&ga=GA1.1.456937388.1697227142&semt=sph" alt="imagen de una blusa" height="167px" class="seccion-productos__producto">
+    <img src="https://img.freepik.com/foto-gratis/camisetas-blancas-espacio-copia-sobre-fondo-gris_53876-104920.jpg?size=626&ext=jpg&ga=GA1.1.456937388.1697227142&semt=sph" alt="imagen de camisa blanca" height="167px" class="seccion-productos__producto">
     <!--hasta que di con la otra manera de colocar una imagen, sin necesidad de poner todo el link.-->
-    <img src="image/percha (1).png" alt="icono" width="146">
-    <img src="image/shirtwhite.jpg" alt="camisa" height="164">
-</section>
+    <img src="image/percha (1).png" alt="icono" width="146" class="seccion-productos__producto">
+    <img src="image/shirtwhite.jpg" alt="camisa" height="164" class="seccion-productos__producto">
 </div>
 <br>
-<div id="reseñas">
-<section>
+<div id="reseñas" class="seccion-reseñas">
     <!--hacer cambios aqui en cuanto a orden y tratar que se vea lo mas pequeño sin que quede incomodo de leer o 
         interactuar ya sea en pc y en dispositivos moviles.-->
     <!--hacer retoques en cuanto a visibilidad de este div paraque s vea completo a la hora de dirigirnos
     aqui cuando hagamos click en "reseñas" en la barra de navegacion.-->
-        <h2>Reseñas de clientes</h2>
-        <form>
-        <fieldset>
-            <h4> Eliga de 1 a 5 estrellas como le 
+    <!--aplicar el metodo BEM a esta parte.-->
+        <h2 class="seccion-reseñas__titulo">Reseñas de clientes</h2>
+        <form class="formulario-reseñas">
+            <h4 class="formulario-reseñas__texto"> Eliga de 1 a 5 estrellas como le 
                 parecieron nuestros servicios y productos.</h4>
         <fieldset>
             <label for="1-estrella">1</label><span>⭐</span>
@@ -106,7 +122,6 @@
         </form>
         <!--Poner un apartado donde salgan los comentarios de clientes y en donde tambien pueda dejar sus comentarios.-->
         <!--De alguna manera conectar en boton de comentar a el de registro si es que no esta registrado.-->
-</section>
 </div>
 </body>
 <br>
