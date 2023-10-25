@@ -13,11 +13,25 @@
     <link rel="stylesheet" href="style/estilosindex.css">
 </head>
 <body>
-    <div id="nombre-empresa">
-        <center>
-            <h1>Gyroo</h1>
-        </center>
+    <nav id="apartado_titulo" class="gyroo_nav">
+    <div class="apartado__login">
+            <a href="login.html" class="login__link">
+                <img src="image/inicio_de_sesion -icon.png" alt="icon_login" class="login__link__img">
+            Iniciar sesion</a>
+            <a href="sign-in.html" class="login__link">
+                <img src="image/registrate-icon.png" alt="icon_sign-in" class="login__link__img">
+            Registrate</a> 
     </div>
+    <div class="name_center">
+            <img src="image/GYROO.png" alt="nombre-empresa_gyroo" class="name_center__gyroo">
+    </div>
+    <div class="apartado__carrito">
+        <a href="carrito.html" class="car__link">
+            <img src="image/carrito-compras.png" alt="icono_carrito-compras" class="car__link__img">
+        Carrito</a>
+    </div>
+    </nav>
+
 <header class="header">
     <!--ver si al index lo hago navegacion interna o como esta ahora. -->
     <!--poner en los enlaces de login y inicio de sesion iconos para que se vea mejor y sea mas limpia la pagina a mi parecer.-->
@@ -37,19 +51,14 @@
                 <a href="#nosotros" class="menu__link">Nosotros</a>           
             </li>
             <li class="menu__item">
-                <a href="#productos" class="menu__link">Productos</a            
+                <a href="#productos" class="menu__link">Productos</a>           
             </li>
             <li class="menu__item">
                 <a href="#reseñas" class="menu__link">Reseñas</a>                
             </li>
-            <li class="menu__item">
-                <a href="login.html" class="menu__link">Registrarse</a>              
-            </li>
-            <li class="menu__item">
-                <a href="inicio-sesion.html" class="menu__link">Iniciar sesion</a>
-            </li>
         </ul>
     </nav>
+    
 </header>
 
 <div class="container_banner">
@@ -91,7 +100,7 @@
         <form class="formulario-reseñas">
             <h4 class="formulario-reseñas__texto"> Eliga de 1 a 5 estrellas como le 
                 parecieron nuestros servicios y productos.</h4>
-        <fieldset>
+
             <label for="1-estrella">1</label><span>⭐</span>
             <input type="radio" name="data-calificacion" id="1-estrella" value="1">
             
@@ -110,15 +119,14 @@
             <br><br>
             <label for="5-estrella">5</label><span>⭐</span>
             <input type="radio" name="data-calificacion" id="5-estrella" value="5">
-        </fieldset>
-        <fieldset>
+       
             <h4>Escribe tu reseña:</h4>
             <label for="comentario"></label>
             <textarea rows="10" cols="45" placeholder="Comentario..." id="comentario"></textarea>
-        </fieldset>
+       
         <br><br>
             <input type="submit" value="Subir comentario">
-        </fieldset>
+
         </form>
         <!--Poner un apartado donde salgan los comentarios de clientes y en donde tambien pueda dejar sus comentarios.-->
         <!--De alguna manera conectar en boton de comentar a el de registro si es que no esta registrado.-->
