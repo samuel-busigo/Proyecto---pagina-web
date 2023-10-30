@@ -1,7 +1,11 @@
 @import 'navigation.css';
 @import 'banner.css';
 @import 'footer.css';
+@import 'fonts.css';
+@import 'reseñas.css';
 @import 'gyroo-nav.css';
+@import 'seccion_nosotros.css';
+@import 'productos.css';
 
 body{
     margin: 10px 0px;
@@ -13,6 +17,8 @@ body{
     border-top: 1px solid black;
     margin-top: 10px 0px;
 }
+
+
 
 @media screen and (max-width:480px) {
     body{

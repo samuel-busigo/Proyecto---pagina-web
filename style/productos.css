@@ -1,0 +1,21 @@
+.seccion-productos{
+    padding-left: 15px;
+}
+
+.apartado__producto{
+    background-color: rgb(53, 53, 53);
+    height: 230px;
+    width: 250px;
+    
+}
+
+.apartado__producto__img{
+    height: 130px;
+    margin: 20px;
+    padding-left: 6px;
+}
+
+.apartado__producto__texto{
+    padding-left: 15px;
+    color: aliceblue;
+}

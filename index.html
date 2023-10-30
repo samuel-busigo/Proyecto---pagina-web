@@ -8,29 +8,46 @@
     cambiar tu manera de vestir con solo un click.">
     <meta name="keywords" content="Prendas, ropa, camisas, pantalones, chaquetas, zapatos, camisetas, bermudas.">
    
-    <title>Gyroo - Tienda de ropa online</title>
+    <title class="tittle__page">Gyroo - Tienda de ropa online</title>
     <link rel="icon" href="image/icon_page.jpg" type="image/png">
     <link rel="stylesheet" href="style/estilosindex.css">
 </head>
-<body>
-    <nav id="apartado_titulo" class="gyroo_nav">
+
+
+<body class="body">
+        <nav id="apartado_titulo" class="gyroo_nav">
     <div class="apartado__login">
             <a href="login.html" class="login__link">
-                <img src="image/inicio_de_sesion -icon.png" alt="icon_login" class="login__link__img">
-            Iniciar sesion</a>
-            <a href="sign-in.html" class="login__link">
-                <img src="image/registrate-icon.png" alt="icon_sign-in" class="login__link__img">
-            Registrate</a> 
+                <img src="image/inicio_de_sesion-icon.png" alt="icon_login" class="login__link__img">
+            </a>
+            <div class="content__img_1">
+                <p class="content__img__p1">Inicia sesion</p>
+            </div>
     </div>
-    <div class="name_center">
-            <img src="image/GYROO.png" alt="nombre-empresa_gyroo" class="name_center__gyroo">
-    </div>
-    <div class="apartado__carrito">
+    <div class="apartado__sign_in">
+        <a href="sign-in.html" class="sign_in__link">
+            <img src="image/registrate-icon.png" alt="icon_sign-in" class="sign_in__link__img">
+        </a>
+        <div class="content__img_2">
+            <p class="content__img__p2">Registrate</p>
+        </div>
+</div>
+
+ <!--  
+<div class="name_center">
+    <img src="image/GYROO.png" alt="nombre-empresa_gyroo" class="name_center__gyroo">
+</div>
+-->
+
+<div class="apartado__carrito">
         <a href="carrito.html" class="car__link">
             <img src="image/carrito-compras.png" alt="icono_carrito-compras" class="car__link__img">
-        Carrito</a>
-    </div>
-    </nav>
+        </a>
+        <div class="content__carrito">
+            <p class="content__carrito_p">Carrito</p>
+        </div>
+</div>
+</nav>
 
 <header class="header">
     <!--ver si al index lo hago navegacion interna o como esta ahora. -->
@@ -48,7 +65,7 @@
                 <a href="index.html" class="menu__link">Inicio</a>
             </li>
             <li class="menu__item">
-                <a href="#nosotros" class="menu__link">Nosotros</a>           
+                <a href=#nosotros class="menu__link">Nosotros</a>           
             </li>
             <li class="menu__item">
                 <a href="#productos" class="menu__link">Productos</a>           
@@ -64,33 +81,72 @@
 <div class="container_banner">
     <img src="image/banner.jpg" alt="Banner" class="container_banner__img">
 </div>
-
 <div class="separador"></div>
 
-<br><br>
 
-    <!--hacer una seccion de hombres y otra de mujeres, para que se vea agradable a la vista y organizado, en lugar de todo revuelto.-->
-<div id="nosotros" class="seccion-nosotros">
-    <!--Cambiar esta parte a otra pagina de carga.-->
-    <!--cambiar a una imagen descargada para no poner link. -->
-    <center><font size="4"><p><b>Gyroo</b> una empresa <b>enfocada</b> en la moda y el diseño.</p></font>
-    <img src="https://th.bing.com/th/id/OIG.CRRspcfYyEfnXb8bIRNm?w=270&h=270&c=6&r=0&o=5&pid=ImgGn" alt="icono-gyroo" width="273px" class="seccion-nosotros__logo"></center>
+<!--hacer una seccion de hombres y otra de mujeres, para que se vea agradable a la vista y organizado, en lugar de todo revuelto.-->
+<!--escribir correctamente todas las palabras de este apartado y de cualquier otro que este a la vista del ususario.-->
+<section id="nosotros">
+<div class="seccion-nosotros">
+    <div class="seccion-nosotros__text">
+        <img src="image/gyroo.jpg" alt="gyroo_company" class="seccion-nosotros__img">
+        <font size="5" class="seccion-nosotros__font"><p class="seccion-nosotros__texto"><b>Gyroo</b> es una empresa
+        <b>enfocada</b> en la moda y el diseño.</p></font>
+        <font size="5" class="seccion-nosotros__font"><p>
+            Como empresa nos proponemos a dejar una huella en el mundo de la moda y en cada una de las personas 
+            que nos apoyaron desde un inicio. Y por supuesto, no menos importante nuestros clientes porque sin ellos
+            no seriamos lo que hoy somos.
+        </p></font>
+        <font size="5" class="seccion-nosotros__font"><p>
+            Nuestra empresa garantiza el excelente material textil el cual estan hechas nuestras prendas, poniendo 
+            a prueba la durabilidad en cuanto a material y su pigmento. Pero no seriamos una empresa completa sin antes 
+            poner por delante el servicio al cliente el cual está abierto a toda critica para su mejora.        
+        </p></font>
+        </p>
+        <font size="5" class="seccion-nosotros__font"><p>
+            Y puede estar al pendiente de las criticas y comentarios sobre nuestros servicios y productos por medio 
+            de está página en nuestra sección de reseñas. 
+        </p></font>
+    </div>
+<div class="atajo__reseñas">
+        <a href="#reseñas">
+            <input type="button" value="Ver reseñas" class="atajo__reseñas__button">
+        </a>
 </div>
+</div>
+</section>
+
 <br><br>
 <div id="productos" class="seccion-productos">
         <h2 class="seccion-productos__titulo">Productos que te puedan interesar</h2>
     <!--imagenes de ropa en venta. Poner unas 12 o más imagenes con sus respectivos precios.-->
     <!--Tambien buscar poner una opcion de compra de ese producto (carrito de compras)-->
     <!--poner "div" en cada imagen y abajo la informacion con el precio.-->
-    <img src="https://img.freepik.com/psd-gratis/vista-frontal-camiseta-blanca-aislada_125540-1194.jpg?size=626&ext=jpg&ga=GA1.1.456937388.1697227142" alt="imagen camisa negra" height="167px" class="seccion-productos__producto">
-    <img src="https://img.freepik.com/foto-gratis/maqueta-diseno-superior-moda-presentada-percha-madera_460848-13965.jpg?size=626&ext=jpg&ga=GA1.1.456937388.1697227142&semt=sph" alt="imagen de una blusa" height="167px" class="seccion-productos__producto">
-    <img src="https://img.freepik.com/foto-gratis/camisetas-blancas-espacio-copia-sobre-fondo-gris_53876-104920.jpg?size=626&ext=jpg&ga=GA1.1.456937388.1697227142&semt=sph" alt="imagen de camisa blanca" height="167px" class="seccion-productos__producto">
-    <!--hasta que di con la otra manera de colocar una imagen, sin necesidad de poner todo el link.-->
-    <img src="image/percha (1).png" alt="icono" width="146" class="seccion-productos__producto">
-    <img src="image/shirtwhite.jpg" alt="camisa" height="164" class="seccion-productos__producto">
+    <!--hacer una navegacion como la de header, pero que no se mueva. para poner el tipo de ropa otras cosas.-->
+    <div class="apartado__producto">
+        <img src="images_products/camisa_gris.jpg" alt="camisa" class="apartado__producto__img">
+        <p class="apartado__producto__texto"><strong>Precio: 54.000 </strong></p>
+    </div>
+    <!--
+    <div class="apartado__producto">
+        <img src="images_products/camiseta_negra.jpg" alt="imagen de una blusa" class="apartado__producto__img">
+    </div>
+    
+    <div class="apartado__producto">
+        <img src="images_products/pantalon_botacampana.jpg" alt="imagen de camisa blanca" class="apartado__producto__img">
+    </div>
+    
+    <div class="apartado__producto">
+        <img src="" alt="camisa" class="apartado__producto__img">
+    </div>
+    
+    <div class="apartado__producto">
+        <img src="" alt="camisa" class="apartado__producto__img">
+    </div>
+    -->
 </div>
 <br>
-<div id="reseñas" class="seccion-reseñas">
+<div id="reseñas" class="seccion__reseñas">
     <!--hacer cambios aqui en cuanto a orden y tratar que se vea lo mas pequeño sin que quede incomodo de leer o 
         interactuar ya sea en pc y en dispositivos moviles.-->
     <!--hacer retoques en cuanto a visibilidad de este div paraque s vea completo a la hora de dirigirnos
@@ -100,32 +156,32 @@
         <form class="formulario-reseñas">
             <h4 class="formulario-reseñas__texto"> Eliga de 1 a 5 estrellas como le 
                 parecieron nuestros servicios y productos.</h4>
-
-            <label for="1-estrella">1</label><span>⭐</span>
+        <div class="formulario-reseñas__div1">
+            <label for="1-estrella" class="formulario-reseñas__star">1⭐</label>
             <input type="radio" name="data-calificacion" id="1-estrella" value="1">
-            
-            <br><br>
-            <label for="2-estrella">2</label><span>⭐</span>
+        </div>
+        <div class="formulario-reseñas__div2">
+            <label for="2-estrella" class="formulario-reseñas__star">2⭐</label>
             <input type="radio" name="data-calificacion" id="2-estrella" value="2">
-            
-            <br><br>
-            <label for="3-estrella">3</label><span>⭐</span>
+        </div>
+        <div class="formulario-reseñas__div3">
+            <label for="3-estrella" class="formulario-reseñas__star">3⭐</label>
             <input type="radio" name="data-calificacion" id="3-estrella" value="3">
-            
-            <br><br>
-            <label for="4-estrella">4</label><span>⭐</span>
+        </div>
+        <div class="formulario-reseñas__div4">
+            <label for="4-estrella" class="formulario-reseñas__star">4⭐</label>
             <input type="radio" name="data-calificacion" id="4-estrella" value="4">
-            
-            <br><br>
-            <label for="5-estrella">5</label><span>⭐</span>
+        </div>
+        <div class="formulario-reseñas__div5">
+            <label for="5-estrella" class="formulario-reseñas__star">5⭐</label>
             <input type="radio" name="data-calificacion" id="5-estrella" value="5">
-       
-            <h4>Escribe tu reseña:</h4>
-            <label for="comentario"></label>
-            <textarea rows="10" cols="45" placeholder="Comentario..." id="comentario"></textarea>
+        </div>
+            <h4 class="formulario-reseñas__tittle">Escribe tu reseña:</h4>
+            <label for="comentario" class="formulario-reseñas__comentario"></label>
+            <textarea rows="10" cols="45" placeholder="Comentario..." id="comentario" class="formulario-reseñas__comment"></textarea>
        
         <br><br>
-            <input type="submit" value="Subir comentario">
+            <input type="submit" value="Subir comentario" class="formulario-reseñas__button">
 
         </form>
         <!--Poner un apartado donde salgan los comentarios de clientes y en donde tambien pueda dejar sus comentarios.-->

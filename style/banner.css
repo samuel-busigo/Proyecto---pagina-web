@@ -1,24 +1,25 @@
 .container_banner{
-    height: 525px;
+    height: 512px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     margin: 0px auto;
+    background-color: rgb(231, 230, 233);
 }
 
 .container_banner__img{
-    width: 100%;
+    width: 900px;
     height: auto;
 }
 
 @media screen and (max-width:480px) {
     .container_banner{
-        height: 40vh;
+        height: 48vh;
     }
     
     .container_banner__img{
-        width: 100%;
+        width: 400px;
         height: auto;
     }
 }
