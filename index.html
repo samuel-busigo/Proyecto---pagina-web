@@ -13,53 +13,50 @@
     <link rel="stylesheet" href="style/estilosindex.css">
 </head>
 
-
-<body class="body">
-        <nav id="apartado_titulo" class="gyroo_nav">
-    <div class="apartado__login">
-            <a href="login.html" class="login__link">
-                <img src="image/inicio_de_sesion-icon.png" alt="icon_login" class="login__link__img">
-            </a>
-            <div class="content__img_1">
-                <p class="content__img__p1">Inicia sesion</p>
-            </div>
-    </div>
-    <div class="apartado__sign_in">
-        <a href="sign-in.html" class="sign_in__link">
-            <img src="image/registrate-icon.png" alt="icon_sign-in" class="sign_in__link__img">
-        </a>
-        <div class="content__img_2">
-            <p class="content__img__p2">Registrate</p>
-        </div>
-</div>
-
- <!--  
-<div class="name_center">
-    <img src="image/GYROO.png" alt="nombre-empresa_gyroo" class="name_center__gyroo">
-</div>
--->
-
-<div class="apartado__carrito">
-        <a href="carrito.html" class="car__link">
-            <img src="image/carrito-compras.png" alt="icono_carrito-compras" class="car__link__img">
-        </a>
-        <div class="content__carrito">
-            <p class="content__carrito_p">Carrito</p>
-        </div>
-</div>
-</nav>
-
-<header class="header">
+<header id="header">
     <!--ver si al index lo hago navegacion interna o como esta ahora. -->
     <!--poner en los enlaces de login y inicio de sesion iconos para que se vea mejor y sea mas limpia la pagina a mi parecer.-->
-    <nav class="menu">
-
+    <div class="menu">
+        <!--Lineas para navegación de celular-->
         <div class="menu-mobile">
             <div class="menu-mobile__line"></div>
             <div class="menu-mobile__line"></div>
             <div class="menu-mobile__line"></div>
         </div>
+    </div>
+<!--Terminación de las lineas para navegación de celular-->
 
+        <ul class="navegation__list">
+            <li class="navegation__list__item">
+                <a class="navegation__list__link" href="#body">Inicio</a>
+            </li>
+            <li class="navegation__list__item">
+                <a class="navegation__list__link" href="#footer">Contactanos</a>
+            </li>
+            <li class="navegation__list__item">
+                <a class="navegation__list__link" href="#reseñas">Reseñas</a>
+            </li>
+            <li class="navegation__list__item_0">
+                <a class="navegation__list__link" href="sign-in.html">Usuario</a>
+            </li>
+            <li class="navegation__list__item_1">
+                <a class="navegation__list__link" href="carrito.html">Carrito</a>
+            </li>
+        </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--
+    <div class="menu__left">
         <ul class="menu__list">
             <li class="menu__item">
                 <a href="index.html" class="menu__link">Inicio</a>
@@ -73,48 +70,80 @@
             <li class="menu__item">
                 <a href="#reseñas" class="menu__link">Reseñas</a>                
             </li>
+            <li class="menu__right__item_0">
+                <a href="sign-in.html" class="menu__right__link_0">
+                    <img src="image/icononuevosignin.png" alt="icon_sign-in" class="menu__right__img__sign-in">
+                </a>
+            </li>
+            <li class="menu__right__item_1">
+                <a href="carrito.html" class="menu__right__link_1">
+                    <img src="image/carrito nuevo.png" alt="icono_carrito-compras" class="menu__right__img__carrito">
+                </a>
         </ul>
-    </nav>
+    </div>
+        <!--
+        <div class="apartado__login">
+            <a href="login.html" class="login__link">
+                <img src="image/inicio_de_sesion-icon.png" alt="icon_login" class="login__link__img">
+            </a>
+            <div class="content__img_1">
+                <p class="content__img__p1">Inicia sesion</p>
+            </div>
+    </div>
+    -->
+<!--
+    <div class="menu__right">
+<ul class="menu__list__right">
     
+            
+    </li>
+</ul>
+</div>
+    </div>
+-->
+
+    <!--
+        <div class="content__carrito">
+        <div class="content__carrito__div">
+                <p class="content__carrito_p">carrito</p>
+            </div>
+        </div>
+        <div class="content__user">
+            <div class="content__user__div">
+                <p class="content__user__p">Registrate</p>
+            </div>
+        </div>
+
+
+
+    <nav id="apartado_titulo" class="gyroo_nav">
+    
+        
+    </nav>
+-->
+
 </header>
 
-<div class="container_banner">
-    <img src="image/banner.jpg" alt="Banner" class="container_banner__img">
-</div>
-<div class="separador"></div>
+<body id="body">
 
+<div class="container__grid">
+    <div class="banner__grid">
+        <img src="image/banner.jpg" alt="Banner" class="banner__grid__img">
+    </div>
+    <div class="nosotros__grid">
+        <img src="image/gyroo.jpg" alt="gyroo_company" class="nosotros__grid__img">
+
+        <p class="nosotros__grid__QS">¿Quienes somos?</p>
+        <p class="nosotros__grid__font"><b>Gyroo</b> es una empresa
+        <b>enfocada</b> en la moda</p>
+        <p class="nosotros__grid__font">y el diseño de prendas de vestir, así como en su</p>
+        <p class="nosotros__grid__font"> comercialización y brindando
+        un buen servicio.</p>
+    </div>
+</div>
 
 <!--hacer una seccion de hombres y otra de mujeres, para que se vea agradable a la vista y organizado, en lugar de todo revuelto.-->
 <!--escribir correctamente todas las palabras de este apartado y de cualquier otro que este a la vista del ususario.-->
-<section id="nosotros">
-<div class="seccion-nosotros">
-    <div class="seccion-nosotros__text">
-        <img src="image/gyroo.jpg" alt="gyroo_company" class="seccion-nosotros__img">
-        <font size="5" class="seccion-nosotros__font"><p class="seccion-nosotros__texto"><b>Gyroo</b> es una empresa
-        <b>enfocada</b> en la moda y el diseño.</p></font>
-        <font size="5" class="seccion-nosotros__font"><p>
-            Como empresa nos proponemos a dejar una huella en el mundo de la moda y en cada una de las personas 
-            que nos apoyaron desde un inicio. Y por supuesto, no menos importante nuestros clientes porque sin ellos
-            no seriamos lo que hoy somos.
-        </p></font>
-        <font size="5" class="seccion-nosotros__font"><p>
-            Nuestra empresa garantiza el excelente material textil el cual estan hechas nuestras prendas, poniendo 
-            a prueba la durabilidad en cuanto a material y su pigmento. Pero no seriamos una empresa completa sin antes 
-            poner por delante el servicio al cliente el cual está abierto a toda critica para su mejora.        
-        </p></font>
-        </p>
-        <font size="5" class="seccion-nosotros__font"><p>
-            Y puede estar al pendiente de las criticas y comentarios sobre nuestros servicios y productos por medio 
-            de está página en nuestra sección de reseñas. 
-        </p></font>
-    </div>
-<div class="atajo__reseñas">
-        <a href="#reseñas">
-            <input type="button" value="Ver reseñas" class="atajo__reseñas__button">
-        </a>
-</div>
-</div>
-</section>
 
 <br><br>
 <div id="productos" class="seccion-productos">
@@ -189,7 +218,7 @@
 </div>
 </body>
 <br>
-<footer class="footer">
+<footer id="footer">
     <div class="footer-content">
 
         <div class="footer-logo">

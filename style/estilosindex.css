@@ -1,27 +1,21 @@
-@import 'navigation.css';
+
 @import 'banner.css';
 @import 'footer.css';
 @import 'fonts.css';
 @import 'reseñas.css';
-@import 'gyroo-nav.css';
+@import 'barra_navegacion.css';
 @import 'seccion_nosotros.css';
 @import 'productos.css';
+@import 'sign-in.css';
 
-body{
-    margin: 10px 0px;
-}
-
-/*separador*/
-/*el color negro en el separador es mientras tanto.*/
-.separador{
-    border-top: 1px solid black;
-    margin-top: 10px 0px;
+#body{
+    margin: 0px 0px 0px 0px;
 }
 
 
 
 @media screen and (max-width:480px) {
-    body{
+    #body{
         margin: 0px;
     }
 }

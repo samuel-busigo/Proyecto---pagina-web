@@ -1,16 +1,56 @@
-.container_banner{
-    height: 512px;
+/*Banner*/
+.container__grid{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    margin: 0px auto;
-    background-color: rgb(231, 230, 233);
+    background-color: rgb(255, 255, 255);
+    padding-top: 5px;
+    height: 260px;
+    width: 1350px;
 }
 
-.container_banner__img{
-    width: 900px;
+.banner__grid{
+    overflow: hidden;
+    width: 405px;
+    height: 260px;
+    padding-left: 145px;
+    padding-bottom: 10px;
+    background-color: rgb(227, 232, 233);
+    border: solid 2px gray;
+    border-radius: 15px;
+    margin-left: 5px;
+}
+
+.banner__grid__img{
     height: auto;
+    width: 280px;
+}
+
+/*Nosotros*/
+.nosotros__grid{
+    width: 772px;
+    height: 270px;
+    border: solid 2px black;
+    border-radius: 15px;
+    margin-left: 8px;
+}
+
+.nosotros__grid__QS{
+    margin-left: 55px;
+    font-size: 5ch;
+}
+
+.nosotros__grid__font{
+    vertical-align: inherit;
+    text-align: inherit;
+    margin-left: 65px;
+    font-size: 100%;
+}
+
+.nosotros__grid__img{
+    width: 240px;
+    float: right;
+    padding-top: 15px;
+    padding-right: 10px;
+    border-radius: 40px;
 }
 
 @media screen and (max-width:480px) {

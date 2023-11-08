@@ -1,0 +1,72 @@
+/*General*/
+#header{
+    position: sticky;
+    top: 0;
+}
+
+.navegation__list{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    background-color: rgb(0, 0, 255);
+}
+
+.navegation__list__item{
+    display: inline;
+    float: left;
+}
+
+.navegation__list__item .navegation__list__link{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+.navegation__list__item .navegation__list__link:hover {
+    background-color: rgb(65, 65, 255);
+}
+
+/*Carrito*/
+.navegation__list__item_0{
+    display: inline;
+    float: right;
+}
+
+.navegation__list__item_0 .navegation__list__link{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+.navegation__list__item_0 .navegation__list__link:hover {
+    background-color: rgb(65, 65, 255);
+}
+
+/*Ususario*/
+.navegation__list__item_1{
+    display: inline;
+    float: right;
+}
+
+.navegation__list__item_1 .navegation__list__link{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+.navegation__list__item_1 .navegation__list__link:hover {
+    background-color: rgb(65, 65, 255);
+}
+
+
+

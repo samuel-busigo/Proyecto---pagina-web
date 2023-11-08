@@ -2,15 +2,15 @@ header{
     background-color:rgb(45, 96, 115);
     color: white;
     text-align: center;
-    padding: 2px;
+    padding: 0px;
     margin: 0px;
-    position: sticky;
+    position: static;
     top: 0px;
 }
 
 .menu__list{
     display: flex;
-    justify-content: space-around;
+    justify-content:left;
     list-style-type: none;
 }
 

@@ -1,26 +1,4 @@
-/*Nosotros*/
-#nosotros{
-    padding-top: 70px;   
-}
 
-.seccion-nosotros{
-    margin-left: 10px;
-    margin-right: 10px;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    width: 1320px;
-    height: 580px;
-}
-
-.seccion-nosotros__font{
-    vertical-align: inherit;
-}
-
-.seccion-nosotros__img{
-    width: 300px;
-    float: right;
-    padding-right: 10px;
-}
 
 /*Button*/
 .atajo__reseñas{
