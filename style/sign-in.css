@@ -1,0 +1,73 @@
+.seccion-nombre-empresa__name{
+    color: azure;
+}
+
+.body{
+    background-color: #1d1d20;
+}
+
+.campo{
+    border-radius: 15px;
+    width: 400px;
+    margin-left: 460px;
+    margin-top: 40px;
+}
+
+::placeholder{
+    color: rgb(65, 65, 65);
+}
+
+.form-content__datos{
+    margin-left: 110px;
+}
+
+.id_name{
+    color: azure;
+    margin-left: 162px;
+}
+
+.id_last_name{
+    color: azure;
+    margin-left: 165px;
+}
+
+.id_email{
+    color: azure;
+    margin-left: 125px;
+}
+
+.id_pass{
+    color: azure;
+    margin-left: 155px;
+}
+
+.id_men{
+    color: azure;
+    margin-left: 165px;
+}
+
+.id_women{
+    color: azure;
+    margin-left: 165px;
+}
+
+.form-content__button{
+    color: black;
+    margin-left: 125px;
+    background-color: white;
+    border: 2px solid #000000;
+    padding: 20px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline block;
+    font-size: 15px;
+    color: black;
+    border-radius: 35px;
+    transition-duration: 0.2s;
+}
+
+.form-content__button:hover {
+    background-color: #000000;
+    color: white;
+    border: 2px solid white;
+}
