@@ -16,7 +16,13 @@ form.addEventListener("submit", (event) => {
 
     if (usuarioObtenido) {
         if (usuarioObtenido.password === passwordValider) {
-            window.location.href = "/index.html";
+            let login = {
+                logeado: true,
+                nombre: usuarioObtenido.nombre
+            };
+            
+            localStorage.setItem("login", JSON.stringify(login));
+            window.location.href = "index.html";
         } else {
             alert("La contraseña es incorrecta")
         }
@@ -27,6 +33,6 @@ form.addEventListener("submit", (event) => {
 });
 
 function redireccion() {
-    window.location.href = "/index.html";
+    window.location.href = "index.html";
 
 }

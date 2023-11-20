@@ -1,11 +1,9 @@
 .contenedor-productos{
     display: flex;
     justify-content: space-around;
-    
 }
 
 .apartado__producto__texto{
-    padding-left: 15px;
     color: rgb(0, 0, 0);
 }
 
@@ -13,20 +11,69 @@
 
 .apartado__producto{
     background-color:rgb(240, 240, 240);
+    height: 560px;
     width: 330px;
+    border-radius: 10px;
 }
 
 .apartado__producto:hover {
-    border: 1px solid black;
+    border: 1px solid rgb(70, 70, 70);
 }
 
 /*Dimensiones de las imagenes de los productos*/
 
 .apartado__producto__img{
-    height: auto;
-    width: 100%;
+    height: 450px;
+    width: 330px;
     object-fit: contain;
-    
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
+/*En fase de prueba*/
+/*Carrusel de productos*/
 
+.contenedor_carrusel{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(236, 236, 236);
+}
+
+.apartado__carrusel__producto{
+    background-color: rgb(190, 190, 190);
+    height: 350px;
+    width: 155px;
+    border-radius: 10px;
+}
+
+.apartado__carrusel__producto__img{
+    height: 240px;
+    width: 155px;
+    object-fit: contain;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.apartado__carrusel__producto__info__caract{
+
+}
+
+/*Boton carrito*/
+
+.button__carrito{
+    margin-top: 40px;
+    border-radius: 4px;
+    border-color: rgb(43, 43, 43);
+    background-color: rgb(182, 182, 182);
+}
+
+.button__carrito:hover {
+    background-color: rgb(116, 116, 116);
+}
+
+.apartado__producto__info{
+    display: flex;
+    justify-content: space-around;
+}

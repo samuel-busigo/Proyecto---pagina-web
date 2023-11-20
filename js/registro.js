@@ -9,7 +9,12 @@ class Usuario{
 }
 
 let listUsuarios = [];
-listUsuarios = JSON.parse(localStorage.getItem("listUsuarios"));
+
+if (JSON.parse(localStorage.getItem("listUsuarios"))) {
+    listUsuarios = JSON.parse(localStorage.getItem("listUsuarios"));
+}
+//listUsuarios = JSON.parse(localStorage.getItem("listUsuarios"));
+
 
 const formRegistro = document.getElementById("registro");
 
@@ -24,13 +29,13 @@ formRegistro.addEventListener("submit", function(e) {
     
 
     let newUsuario = new Usuario(nombreNewUser, apellidosNewUser, emailNewUser, passwordNewUser, generoNewUser);
-
-
+    
+    
     listUsuarios.push(newUsuario);
     console.log(listUsuarios);
 
     localStorage.setItem("listUsuarios", JSON.stringify(listUsuarios));
 
     formRegistro.reset();
-    window.location.href();
+    window.location.href = "login.html";
 });

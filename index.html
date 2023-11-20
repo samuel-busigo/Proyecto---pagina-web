@@ -28,7 +28,9 @@
 
         <ul class="navegation__list">
             <li class="navegation__list__item">
-                <a class="navegation__list__link" href="#body">Inicio</a>
+                <a class="navegation__list__link" href="#body">
+                    <img src="image/Icono_gyroo.png" alt="icon" width="25px">
+                </a>
             </li>
             <li class="navegation__list__item">
                 <a class="navegation__list__link" href="#footer">Contactanos</a>
@@ -36,92 +38,29 @@
             <li class="navegation__list__item">
                 <a class="navegation__list__link" href="#reseñas">Reseñas</a>
             </li>
-            <li class="navegation__list__item_0">
-                <a class="navegation__list__link" href="sign-in.html">Usuario</a>
-            </li>
-            <li class="navegation__list__item_1">
-                <a class="navegation__list__link" href="carrito.html">Carrito</a>
-            </li>
-        </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-        <!--
-    <div class="menu__left">
-        <ul class="menu__list">
-            <li class="menu__item">
-                <a href="index.html" class="menu__link">Inicio</a>
-            </li>
-            <li class="menu__item">
-                <a href=#nosotros class="menu__link">Nosotros</a>           
-            </li>
-            <li class="menu__item">
-                <a href="#productos" class="menu__link">Productos</a>           
-            </li>
-            <li class="menu__item">
-                <a href="#reseñas" class="menu__link">Reseñas</a>                
-            </li>
-            <li class="menu__right__item_0">
-                <a href="sign-in.html" class="menu__right__link_0">
-                    <img src="image/icononuevosignin.png" alt="icon_sign-in" class="menu__right__img__sign-in">
+            <!--      cambiar iconos a el color blanco o el mas cercano a este, para hoy-->
+            <li id="login_item" class="navegation__list__item_0">
+                <a class="navegation__list__link" href="sign-in.html">
+                    <img src="image/Icono_usuario.png" alt="icono_usuario" width="20px">
                 </a>
             </li>
-            <li class="menu__right__item_1">
-                <a href="carrito.html" class="menu__right__link_1">
-                    <img src="image/carrito nuevo.png" alt="icono_carrito-compras" class="menu__right__img__carrito">
+
+            <li id="cerrar_sesion">
+                <a href="index.html" class="nav__list__link">
+                    <p id="cerrar_sesion__link"></p>
                 </a>
-        </ul>
-    </div>
-        <!--
-        <div class="apartado__login">
-            <a href="login.html" class="login__link">
-                <img src="image/inicio_de_sesion-icon.png" alt="icon_login" class="login__link__img">
-            </a>
-            <div class="content__img_1">
-                <p class="content__img__p1">Inicia sesion</p>
-            </div>
-    </div>
-    -->
-<!--
-    <div class="menu__right">
-<ul class="menu__list__right">
-    
+            </li>
+            <li id="item_nombre">
+                <p id="nombre_usuario"></p>
+            </li>
             
-    </li>
-</ul>
-</div>
-    </div>
--->
 
-    <!--
-        <div class="content__carrito">
-        <div class="content__carrito__div">
-                <p class="content__carrito_p">carrito</p>
-            </div>
-        </div>
-        <div class="content__user">
-            <div class="content__user__div">
-                <p class="content__user__p">Registrate</p>
-            </div>
-        </div>
-
-
-
-    <nav id="apartado_titulo" class="gyroo_nav">
-    
-        
-    </nav>
--->
-
+            <li class="navegation__list__item_1">
+                <a class="navegation__list__link" href="carrito.html">
+                    <img src="image/Carrito_nav.png" alt="carrito" width="20px">
+                </a>
+            </li>
+        </ul>
 </header>
 
 <body id="body">
@@ -142,121 +81,353 @@
     </div>
 </div>
 
-<!--hacer una seccion de hombres y otra de mujeres, para que se vea agradable a la vista y organizado, en lugar de todo revuelto.-->
-<!--escribir correctamente todas las palabras de este apartado y de cualquier otro que este a la vista del ususario.-->
-
+<!--Contenedor de productos #1-->
 <br><br>
 <div id="productos" class="contenedor-productos">
         
     <div class="apartado__producto">
         <img src="images_products/camiseta_cuello_en_V.jpg" alt="camisa gris" class="apartado__producto__img">
-        <p class="apartado__producto__texto"><strong>Camiseta cuello en V</strong></p>
-        <p class="apartado__producto__texto">Precio: 54.000</p>
+        <div class="apartado__producto__info">
+            <div class="apartado__producto__info__caract">
+                <p class="apartado__producto__texto"><strong>Camiseta cuello en V</strong></p>
+                <p class="apartado__producto__texto">Precio: 54.000</p>
+            </div>
 
-        <button onclick="agregarProductoCarrito('1')">Cart</button>
+            <div class="apartado__producto__info__button">
+                <button onclick="agregarProductoCarrito('1')" class="button__carrito">
+                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
+                </button>
+            </div>
+        </div>
     </div>
     
     <div class="apartado__producto">
         <img src="images_products/buzo_beige.jpg" alt="Buzo beige" class="apartado__producto__img">
-        <p class="apartado__producto__texto"><strong>Camiseta Negra</strong></p>
-        <p class="apartado__producto__texto">Precio: 60.000</p>
+        <div class="apartado__producto__info">
+            <div class="apartado__producto__info__caract">    
+                <p class="apartado__producto__texto"><strong>Camiseta Negra</strong></p>
+                <p class="apartado__producto__texto">Precio: 60.000</p>
+            </div>
 
-        <button onclick="agregarProductoCarrito('2')">Cart</button>
+            <div class="apartado__producto__info__button">
+                <button onclick="agregarProductoCarrito('2')" class="button__carrito">
+                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
+                </button>
+            </div>
+        </div>
     </div>
     
     <div class="apartado__producto">
         <img src="images_products/pantalon_botacampana.jpg" alt="pantalon botacampana" class="apartado__producto__img">
-        <p class="apartado__producto__texto"><strong>Pantalon Botacampana</strong></p>
-        <p class="apartado__producto__texto">Precio: 95.600</p>
+        <div class="apartado__producto__info">
+            <div class="apartado__producto__info__caract"> 
+                <p class="apartado__producto__texto"><strong>Pantalon Botacampana</strong></p>
+                <p class="apartado__producto__texto">Precio: 95.600</p>
+            </div>
 
-        <button onclick="agregarProductoCarrito('3')">Cart</button>
+            <div class="apartado__producto__info__button">
+                <button onclick="agregarProductoCarrito('3')" class="button__carrito">
+                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
+                </button>
+            </div>
+        </div>
     </div>
     
     <div class="apartado__producto">
         <img src="images_products/camiseta_negra.jpg" alt="Camisa negra" class="apartado__producto__img">
-        <p class="apartado__producto__texto"><strong>Blusa sin Mangas</strong></p>
-        <p class="apartado__producto__texto">Precio: 105.750</p>
+        <div class="apartado__producto__info">
+            <div class="apartado__producto__info__caract">
+                <p class="apartado__producto__texto"><strong>Blusa sin Mangas</strong></p>
+                <p class="apartado__producto__texto">Precio: 105.750</p>
+            </div>
 
-        <button onclick="agregarProductoCarrito('4')">Cart</button>
+            <div class="apartado__producto__info__button">
+                <button onclick="agregarProductoCarrito('4')" class="button__carrito">
+                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
+                </button>
+            </div>
+        </div>
     </div>
 
 </div>
-
+<!--fin del contenedor de productos #1-->
 <br>
-
+<!--Contenedor de productos #2-->
 <div id="productos" class="contenedor-productos">
         
     <div class="apartado__producto">
         <img src="images_products/camiseta_cuello_en_V.jpg" alt="camisa gris" class="apartado__producto__img">
-        <p class="apartado__producto__texto"><strong>Camiseta cuello en V</strong></p>
-        <p class="apartado__producto__texto">Precio: 54.000</p>
+        <div class="apartado__producto__info">
+            <div class="apartado__producto__info__caract">
+                <p class="apartado__producto__texto"><strong>Camiseta cuello en V</strong></p>
+                <p class="apartado__producto__texto">Precio: 54.000</p>
+            </div>
 
-        <button onclick="agregarProductoCarrito('5')">Cart</button>
+            <div class="apartado__producto__info__button">
+                <button onclick="agregarProductoCarrito('5')" class="button__carrito">
+                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
+                </button>
+            </div>
+        </div>
     </div>
     
     <div class="apartado__producto">
         <img src="images_products/buzo_beige.jpg" alt="Buzo beige" class="apartado__producto__img">
-        <p class="apartado__producto__texto"><strong>Camiseta Negra</strong></p>
-        <p class="apartado__producto__texto">Precio: 60.000</p>
+        <div class="apartado__producto__info">
+            <div class="apartado__producto__info__caract">
+                <p class="apartado__producto__texto"><strong>Camiseta Negra</strong></p>
+                <p class="apartado__producto__texto">Precio: 60.000</p>
+            </div>
 
-        <button onclick="agregarProductoCarrito('6')">Cart</button>
+            <div class="apartado__producto__info__button">   
+                <button onclick="agregarProductoCarrito('6')" class="button__carrito">
+                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
+                </button>
+            </div>
+        </div>
     </div>
     
     <div class="apartado__producto">
         <img src="images_products/blusa_con_chaqueta_sin_mangas.jpg" alt="blusa" class="apartado__producto__img">
-        <p class="apartado__producto__texto"><strong>Blusa sin Mangas</strong></p>
-        <p class="apartado__producto__texto">Precio: 105.750</p>
+        <div class="apartado__producto__info">
+            <div class="apartado__producto__info__caract">
+                <p class="apartado__producto__texto"><strong>Blusa sin Mangas</strong></p>
+                <p class="apartado__producto__texto">Precio: 105.750</p>
+            </div>
 
-        <button onclick="agregarProductoCarrito('7')">Cart</button>
+            <div class="apartado__producto__info__button">
+                <button onclick="agregarProductoCarrito('7')" class="button__carrito">
+                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
+                </button>
+            </div>
+        </div>
     </div>
     
     <div class="apartado__producto">
         <img src="images_products/bermuda_jean.jpg" alt="bermuda jean" class="apartado__producto__img">
-        <p class="apartado__producto__texto"><strong>Bermuda de Jean</strong></p>
-        <p class="apartado__producto__texto">Precio: 79.990</p>
+        <div class="apartado__producto__info">
+            <div class="apartado__producto__info__caract">
+                <p class="apartado__producto__texto"><strong>Bermuda de Jean</strong></p>
+                <p class="apartado__producto__texto">Precio: 79.990</p>
+            </div>
 
-        <button onclick="agregarProductoCarrito('8')">Cart</button>
+            <div class="apartado__producto__info__button">
+                <button onclick="agregarProductoCarrito('8')" class="button__carrito">
+                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
+                </button>
+            </div>
+        </div>
     </div>
     
 </div>
-
+<!--fin del contenedor de productos #2-->
 <br>
+<!--Contenedor de productos #3 - en fase de prueba-->
+<div  id="productos" class="contenedor_carrusel">
 
+    <div class="apartado__carrusel__producto">
+        <img src="images_products/bermuda_jean.jpg" alt="bermuda jean" class="apartado__carrusel__producto__img">
+        <div class="apartado__carrusel__producto__info">
+            <div class="apartado__carrusel__producto__info__caract">
+                <p class="apartado__carrusel__producto__texto"><strong>Bermuda de Jean</strong></p>
+                <p class="apartado__carrusel__producto__texto">Precio: 79.990</p>
+            </div>
+
+            <div class="apartado__producto__info__button"> 
+                <button onclick="agregarProductoCarrito('9')" class="button__carrito">
+                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="apartado__carrusel__producto">
+        <img src="images_products/camiseta_negra.jpg" alt="Camisa negra" class="apartado__carrusel__producto__img">
+        <div class="apartado__carrusel__producto__info">
+            <div class="apartado__carrusel__producto__info__caract">
+                <p class="apartado__carrusel__producto__texto"><strong>Pantalon Botacampana</strong></p>
+                <p class="apartado__carrusel__producto__texto">Precio: 95.600</p>
+            </div>
+
+            <div class="apartado__producto__info__button"> 
+                <button onclick="agregarProductoCarrito('10')" class="button__carrito">
+                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="apartado__carrusel__producto">
+        <img src="images_products/camiseta_cuello_en_V.jpg" alt="camisa gris" class="apartado__carrusel__producto__img">
+        <div class="apartado__carrusel__producto__info">
+            <div class="apartado__carrusel__producto__info__caract">
+                <p class="apartado__carrusel__producto__texto"><strong>Camiseta cuello en V</strong></p>
+                <p class="apartado__carrusel__producto__texto">Precio: 54.000</p>
+            </div>
+
+            <div class="apartado__producto__info__button">
+                <button onclick="agregarProductoCarrito('11')" class="button__carrito">
+                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="apartado__carrusel__producto">
+        <img src="images_products/buzo_beige.jpg" alt="Buzo beige" class="apartado__carrusel__producto__img">
+        <div class="apartado__carrusel__producto__info">
+            <div class="apartado__carrusel__producto__info__caract">
+                <p class="apartado__carrusel__producto__texto"><strong>Camiseta Negra</strong></p>
+                <p class="apartado__carrusel__producto__texto">Precio: 60.000</p>
+            </div>
+
+            <div class="apartado__producto__info__button">
+                <button onclick="agregarProductoCarrito('12')" class="button__carrito">
+                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
+                </button>
+            </div>
+        </div>
+    </div> 
+</div>
+<!--fin del contenedor de productos #3-->
+<br>
+<!--Contenedor de productos #4-->
 <div  id="productos" class="contenedor-productos">
 
     <div class="apartado__producto">
         <img src="images_products/bermuda_jean.jpg" alt="bermuda jean" class="apartado__producto__img">
-        <p class="apartado__producto__texto"><strong>Bermuda de Jean</strong></p>
-        <p class="apartado__producto__texto">Precio: 79.990</p>
+        <div class="apartado__producto__info">
+            <div class="apartado__producto__info__caract">
+                <p class="apartado__producto__texto"><strong>Bermuda de Jean</strong></p>
+                <p class="apartado__producto__texto">Precio: 79.990</p>
+            </div>
 
-        <button onclick="agregarProductoCarrito('9')">Cart</button>
+            <div class="apartado__producto__info__button"> 
+                <button onclick="agregarProductoCarrito('13')" class="button__carrito">
+                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
+                </button>
+            </div>
+        </div>
     </div>
 
     <div class="apartado__producto">
         <img src="images_products/camiseta_negra.jpg" alt="Camisa negra" class="apartado__producto__img">
-        <p class="apartado__producto__texto"><strong>Pantalon Botacampana</strong></p>
-        <p class="apartado__producto__texto">Precio: 95.600</p>
+        <div class="apartado__producto__info">
+            <div class="apartado__producto__info__caract">
+                <p class="apartado__producto__texto"><strong>Pantalon Botacampana</strong></p>
+                <p class="apartado__producto__texto">Precio: 95.600</p>
+            </div>
 
-        <button onclick="agregarProductoCarrito('10')">Cart</button>
+            <div class="apartado__producto__info__button"> 
+                <button onclick="agregarProductoCarrito('14')" class="button__carrito">
+                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
+                </button>
+            </div>
+        </div>
     </div>
 
     <div class="apartado__producto">
         <img src="images_products/camiseta_cuello_en_V.jpg" alt="camisa gris" class="apartado__producto__img">
-        <p class="apartado__producto__texto"><strong>Camiseta cuello en V</strong></p>
-        <p class="apartado__producto__texto">Precio: 54.000</p>
+        <div class="apartado__producto__info">
+            <div class="apartado__producto__info__caract">
+                <p class="apartado__producto__texto"><strong>Camiseta cuello en V</strong></p>
+                <p class="apartado__producto__texto">Precio: 54.000</p>
+            </div>
 
-        <button onclick="agregarProductoCarrito('11')">Cart</button>
+            <div class="apartado__producto__info__button">
+                <button onclick="agregarProductoCarrito('15')" class="button__carrito">
+                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
+                </button>
+            </div>
+        </div>
     </div>
 
     <div class="apartado__producto">
         <img src="images_products/buzo_beige.jpg" alt="Buzo beige" class="apartado__producto__img">
-        <p class="apartado__producto__texto"><strong>Camiseta Negra</strong></p>
-        <p class="apartado__producto__texto">Precio: 60.000</p>
+        <div class="apartado__producto__info">
+            <div class="apartado__producto__info__caract">
+                <p class="apartado__producto__texto"><strong>Camiseta Negra</strong></p>
+                <p class="apartado__producto__texto">Precio: 60.000</p>
+            </div>
 
-        <button onclick="agregarProductoCarrito('12')">Cart</button>
+            <div class="apartado__producto__info__button">
+                <button onclick="agregarProductoCarrito('16')" class="button__carrito">
+                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
+                </button>
+            </div>
+        </div>
     </div>
 </div>
+<!--fin del contenedor de productos #4-->
+<br>
+<!--Contenedor de productos #5-->
+<div  id="productos" class="contenedor-productos">
 
+    <div class="apartado__producto">
+        <img src="images_products/bermuda_jean.jpg" alt="bermuda jean" class="apartado__producto__img">
+        <div class="apartado__producto__info">
+            <div class="apartado__producto__info__caract">
+                <p class="apartado__producto__texto"><strong>Bermuda de Jean</strong></p>
+                <p class="apartado__producto__texto">Precio: 79.990</p>
+            </div>
+
+            <div class="apartado__producto__info__button"> 
+                <button onclick="agregarProductoCarrito('17')" class="button__carrito">
+                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="apartado__producto">
+        <img src="images_products/camiseta_negra.jpg" alt="Camisa negra" class="apartado__producto__img">
+        <div class="apartado__producto__info">
+            <div class="apartado__producto__info__caract">
+                <p class="apartado__producto__texto"><strong>Pantalon Botacampana</strong></p>
+                <p class="apartado__producto__texto">Precio: 95.600</p>
+            </div>
+
+            <div class="apartado__producto__info__button"> 
+                <button onclick="agregarProductoCarrito('18')" class="button__carrito">
+                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="apartado__producto">
+        <img src="images_products/camiseta_cuello_en_V.jpg" alt="camisa gris" class="apartado__producto__img">
+        <div class="apartado__producto__info">
+            <div class="apartado__producto__info__caract">
+                <p class="apartado__producto__texto"><strong>Camiseta cuello en V</strong></p>
+                <p class="apartado__producto__texto">Precio: 54.000</p>
+            </div>
+
+            <div class="apartado__producto__info__button">
+                <button onclick="agregarProductoCarrito('19')" class="button__carrito">
+                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="apartado__producto">
+        <img src="images_products/buzo_beige.jpg" alt="Buzo beige" class="apartado__producto__img">
+        <div class="apartado__producto__info">
+            <div class="apartado__producto__info__caract">
+                <p class="apartado__producto__texto"><strong>Camiseta Negra</strong></p>
+                <p class="apartado__producto__texto">Precio: 60.000</p>
+            </div>
+
+            <div class="apartado__producto__info__button">
+                <button onclick="agregarProductoCarrito('20')" class="button__carrito">
+                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--fin del contenedor de productos #5-->
 
 <div id="reseñas" class="seccion__reseñas">
     <!--hacer cambios aqui en cuanto a orden y tratar que se vea lo mas pequeño sin que quede incomodo de leer o 
@@ -324,6 +495,7 @@
         <p class="footer-copyright__text">Todos los Derechos Reservados ©</p>
     </div>
 
+    <script src="js/index.js"></script>
     <script src="js/productos.js"></script>
 </footer>
 </html>

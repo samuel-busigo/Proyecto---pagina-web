@@ -9,8 +9,8 @@ let productos = [
 
 function agregarProductoCarrito(idProducto) {
     let carritoCompras = document.querySelector("#productos-carrito");
-    let nombreProducto "";
-    let precioProducto "";
+    let nombreProducto ;
+    let precioProducto ;
 
     productos.forEach(producto => {
         if(producto.id === idProducto){
