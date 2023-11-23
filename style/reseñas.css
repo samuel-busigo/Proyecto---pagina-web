@@ -1,92 +1,60 @@
-.seccion__reseñas{
-    border: 2px  solid black;
-    border-radius: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
+/*Titulo*/
+#titulo__h2{
+    margin-left: 537px;
 }
 
-.seccion-reseñas__titulo{
-    text-align: center;
+/*Seccion reseñas*/
+
+.contenido__reseñas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+    align-items: center;
+    margin-top: 4rem;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-.formulario-reseñas__texto{
-    margin-left: 20px;
+.contenedor__reseñas{
+    padding: 35px;
+    background-color: rgb(201, 201, 201);
+    border-radius: 3rem;
 }
 
-.formulario-reseñas__div1 {
-    border: 2px solid rgb(231, 227, 0);
-    border-radius: 5px;
-    margin-left: 20px;
-    width: 60px;
-    padding: 10px;
-    float:left ;
+.contenedor__reseñas__p{
+    font-size: 1rem;
+    line-height: 30px;
+    margin-bottom: 1.5rem;
 }
 
-.formulario-reseñas__div1:hover {
-    background-color: rgb(231, 227, 0);
+.contenedor__reseñas__contenido{
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
-.formulario-reseñas__div2 {
-    border: 2px solid rgb(231, 227, 0);
-    border-radius: 5px;
-    margin-left: 20px;
-    width: 60px;
-    padding: 10px;
-    float:left ;
+.contenedor__reseñas__img #imagen__reseña{
+    width: 75px;
+    height: auto;
+    border-radius: 3rem;
 }
 
-.formulario-reseñas__div2:hover {
-    background-color: rgb(231, 227, 0);
+.contenedor__reseñas__texto #encabezado__reseña_h4{
+    margin: 5px 0;
+    font-size: 18px;
 }
 
-.formulario-reseñas__div3 {
-    border: 2px solid rgb(231, 227, 0);
-    border-radius: 5px;
-    margin-left: 20px;
-    width: 60px;
-    padding: 10px;
-    float:left ;
+.contenedor__reseñas__texto #encabezado__reseña_h5{
+    color: rgb(36, 36, 36);
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-weight: 500;
 }
 
-.formulario-reseñas__div3:hover {
-    background-color: rgb(231, 227, 0);
-}
-
-.formulario-reseñas__div4 {
-    border: 2px solid rgb(231, 227, 0);
-    border-radius: 5px;
-    margin-left: 20px;
-    width: 60px;
-    padding: 10px;
-    float:left ;
-}
-
-.formulario-reseñas__div4:hover {
-    background-color: rgb(231, 227, 0);
-}
-
-.formulario-reseñas__div5 {
-    border: 2px solid rgb(231, 227, 0);
-    border-radius: 5px;
-    margin-left: 20px;
-    width: 60px;
-    padding: 10px;
-    float:left ;
-}
-
-.formulario-reseñas__div5:hover {
-    background-color: rgb(231, 227, 0);
-}
-
-.formulario-reseñas__tittle{
-    margin-left: 20px;
-    margin-top: 100px;
-}
-
-.formulario-reseñas__comment{
-    margin-left: 20px;
-}
-
-.formulario-reseñas__button{
-    margin: 0px 0px 10px 20px;
+.contenedor__reseñas__ratings .stars{
+    color: rgb(255, 153, 0);
+    font-size: 18px;
+    margin-right: 5px;
+    text-decoration: none;
 }
