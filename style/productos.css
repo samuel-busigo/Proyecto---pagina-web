@@ -7,6 +7,7 @@
     color: rgb(0, 0, 0);
 }
 
+
 /*Dimensiones de los contenedores de los productos*/
 
 .apartado__producto{
@@ -52,7 +53,7 @@
 /*Carrusel de productos*/
 
 .contenedor_carrusel{
-    width: 82em;
+    width: 98%;
     margin-left: 18px;
     display: flex;
     background-color: rgb(236, 236, 236);
@@ -66,7 +67,7 @@
 .apartado__carrusel__producto{
     background-color: rgb(190, 190, 190);
     height: 350px;
-    width: 250px;
+    width: 220px;
     margin-top: 20px;
     margin-bottom: 20px;
     display: inline-block;
@@ -77,7 +78,7 @@
 
 .apartado__carrusel__producto__img{
     height: 240px;
-    width: 220px;
+    width: 100%;
     object-fit: contain;
     object-fit: cover;
     overflow: hidden;
@@ -110,3 +111,5 @@
 .apartado__producto__info{
     display: flex;
 }
+
+/*Responsive*/

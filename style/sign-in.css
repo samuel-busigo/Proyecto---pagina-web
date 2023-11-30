@@ -1,16 +1,16 @@
 .seccion-nombre-empresa__name{
-    color: azure;
+    color: rgb(255, 255, 255);
 }
 
 .body{
-    background-color: #1d1d20;
+    background-color: #000000;
 }
 
 .campo{
     border-radius: 15px;
     width: 400px;
     margin-left: 460px;
-    margin-top: 40px;
+    border: 2px solid whitesmoke;
 }
 
 ::placeholder{
@@ -18,56 +18,75 @@
 }
 
 .form-content__datos{
+    margin: 10px 20px;
+    padding: 5px 8px;
+    border-radius: 10px;
+    border: none;
     margin-left: 110px;
 }
 
+.form-content__datos__genero{
+    margin: 10px 20px;
+    padding: 5px 8px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 130px;
+}
+
 .id_name{
-    color: azure;
-    margin-left: 162px;
+    color: white;
+    margin-left: 165px;
 }
 
 .id_last_name{
-    color: azure;
+    color: white;
     margin-left: 165px;
 }
 
 .id_email{
-    color: azure;
-    margin-left: 125px;
+    color: white;
+    margin-left: 130px;
 }
 
 .id_pass{
-    color: azure;
+    color: white;
     margin-left: 155px;
 }
 
-.id_men{
-    color: azure;
-    margin-left: 165px;
+#id__genero{
+    color: rgb(255, 255, 255);
+    margin-left: 170px;
 }
 
-.id_women{
-    color: azure;
-    margin-left: 165px;
+#id__p__registro{
+    color: white;
+    margin-left: 55px;
+}
+
+
+#id__link__registro{
+    text-decoration: none;
 }
 
 .form-content__button{
     color: black;
     margin-left: 125px;
     background-color: white;
-    border: 2px solid #000000;
-    padding: 20px 35px;
+    border-color: black;
+    padding: 15px 25px;
     text-align: center;
     text-decoration: none;
     display: inline block;
     font-size: 15px;
-    color: black;
-    border-radius: 35px;
+    border-radius: 25px;
     transition-duration: 0.2s;
 }
 
 .form-content__button:hover {
-    background-color: #000000;
+    background-color: #1d1d20;
     color: white;
-    border: 2px solid white;
+    border: 2px solid #ffffff;
 }
+
+
+/*Responsive*/

@@ -30,7 +30,7 @@
     background-color: rgb(75, 75, 75);
 }
 
-/*Carrito*/
+/*Usuario*/
 .navegation__list__item_0{
     display: inline;
     float: right;
@@ -49,7 +49,8 @@
     background-color: rgb(75, 75, 75);
 }
 
-/*Usuario*/
+
+/*Carrito*/
 .navegation__list__item_1{
     display: inline;
     float: right;
@@ -66,6 +67,135 @@
 
 .navegation__list__item_1 .navegation__list__link:hover {
     background-color: rgb(75, 75, 75);
+}
+
+.navegation__list__link{
+    cursor: pointer;
+}
+
+.nav__carrito{
+   display: none;
+}
+
+.button__vaciar__carrito{
+    display: none;
+}
+
+.button__compra{
+    display: none;
+}
+
+.navegation__list__link:hover > .carrito_compra_content{
+    width: 400px;
+    height: auto;
+    max-height: 550px;
+    position: absolute;
+    right: 0;
+    background-color: white;
+}
+
+.nav__li{
+    list-style: none;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.navegation__list__link:hover .nav__carrito{
+    font-size: 2cqh;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 140px;
+    border-bottom: solid thin whitesmoke;
+    color: black;
+}
+
+.navegation__list__link:hover .carrito_compra_content > .button__vaciar__carrito{
+    display: block;
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: transparent;
+    border: solid thin #e1e1e1;
+    color: #494848;
+    cursor: pointer;
+}
+
+.navegation__list__link:hover .carrito_compra_content > .button__vaciar__carrito:hover{
+    border: solid 1px red;
+    transition: all .4s;
+}
+
+.navegation__list__link:hover .carrito_compra_content > .button__compra{
+    display: block;
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: transparent;
+    border: solid thin #e1e1e1;
+    color: #494848;
+    cursor: pointer;
+}
+
+.navegation__list__link:hover .carrito_compra_content > .button__compra:hover{
+    border: solid 1px #00b300;
+    transition: all .4s;
+}
+
+/*Orden de los productos en el carrito*/
+
+.lista__productos div {
+    display: none;
+    text-align: center;
+    padding: 10px 0 0 0;
+    border: solid thin gray;
+    width: 395px;
+    height: 95px;
+}
+
+.lista__productos div img {
+    height: 90px;
+    width: 80px;
+    object-fit: cover;
+    object-fit: contain;
+}
+
+.navegation__list__item_1 #carrito .navegation__list__link:hover .carrito_compra_content > .lista__productos div {
+    display: flex;
+}
+
+
+.carrito_compra_content .nav__li:nth-child(1){
+    margin-right: 10px;
+}
+
+.carrito_compra_content .nav__li:nth-child(2){
+    margin-right: 35px;
+}
+
+.carrito_compra_content .nav__li:nth-child(3){
+    margin-right: 15px;
+}
+
+.lista__productos div p{
+    width: 300px;
+    font-size: 2cqh;
+    color: black;
+}
+
+.lista__productos div p:nth-child(1){
+    margin-left: 80px;
+}
+
+.lista__productos div p:nth-child(2){
+    margin-left: 20px;
+}
+
+.lista__productos div p:nth-child(3){
+    margin-left: 45px;
+}
+
+.lista__productos div p:nth-child(4){
+    margin-left: 40px;
 }
 
 /*nombre de usuario*/
@@ -87,22 +217,61 @@
 }
 
 #cerrar_sesion__link{
-    color: white;
+    color: rgb(0, 0, 0);
     margin-right: 10px;
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(255, 255, 255);
     padding-left: 3px;
     padding-right: 3px;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 #cerrar_sesion__link:hover{
     padding-left: 3px;
     padding-right: 3px;
+    color: white;
     background-color: rgb(34, 34, 34);
     border-radius: 4px;
 }
 
 .nav__list__link{
     text-decoration: none;
+}
+
+/*Responsive*/
+
+@media screen and (max-widht:480px) {
     
+    #header{
+        width: 480px;
+    }
+    
+    #body{
+        max-width: 480px;
+    }
+
+    .container__grid{
+        width: 470px;
+    }
+
+    .banner__grid{
+        width: 90%;
+    }
+
+    .contenedor_carrusel{
+        width: 380px;
+        margin-left: 0px;
+    }
+
+    .apartado__carrusel__producto__img{
+        width: 100%;
+    }
+
+    .apartado__producto{
+        margin-left: 80px;
+    }
+
+    .apartado__producto__carrusel__button{
+        margin-right: 10px;
+    }
+
 }

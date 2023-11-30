@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Samuel David Busigo Diaz">
-    <meta name="description" content="Este sitio web esta enocado en una tienda en linea de ropa en la que podras 
+    <meta name="description" content="Este sitio web esta enfocado en una tienda en linea de ropa en la que podras 
     cambiar tu manera de vestir con solo un click.">
-    <meta name="keywords" content="Prendas, ropa, camisas, pantalones, chaquetas, zapatos, camisetas, bermudas.">
+    <meta name="keywords" content="Prendas, ropa, camisas, pantalones, chaquetas, camisetas, bermudas.">
    
-    <title class="tittle__page">Gyroo - Tienda de ropa online</title>
+    <title class="title__page">Gyroo - Tienda de ropa online</title>
     <link rel="icon" href="image/icon_page.jpg" type="image/png">
     <link rel="stylesheet" href="style/estilosindex.css">
 </head>
@@ -25,7 +25,7 @@
         </div>
     </div>
 <!--Terminación de las lineas para navegación de celular-->
-
+<nav class="menu__nav">
         <ul class="navegation__list">
             <li class="navegation__list__item">
                 <a class="navegation__list__link" href="#body">
@@ -35,10 +35,11 @@
             <li class="navegation__list__item">
                 <a class="navegation__list__link" href="#footer">Contactanos</a>
             </li>
+
             <li class="navegation__list__item">
                 <a class="navegation__list__link" href="#reseñas">Reseñas</a>
             </li>
-            <!--      cambiar iconos a el color blanco o el mas cercano a este, para hoy-->
+            
             <li id="login_item" class="navegation__list__item_0">
                 <a class="navegation__list__link" href="sign-in.html">
                     <img src="image/Icono_usuario.png" alt="icono_usuario" width="20px">
@@ -55,12 +56,30 @@
             </li>
             
 
-            <li class="navegation__list__item_1">
-                <a class="navegation__list__link" href="carrito.html">
-                    <img src="image/Carrito_nav.png" alt="carrito" width="20px">
-                </a>
-            </li>
+            <div class="navegation__list__item_1">
+                <nav id="carrito">
+                    <a class="navegation__list__link">
+                        <img src="image/Carrito_nav.png" alt="carrito" class="imagen__carrito" width="20px">
+                        <div class="carrito_compra_content">
+                            <ul class="nav__carrito">
+                                <li class="nav__li">Imagen</li>
+                                <li class="nav__li">Nombre</li>
+                                <li class="nav__li">Precio</li>
+                                <li class="nav__li">Cantidad</li>
+                                <li class="nav__li"></li>
+                            </ul>
+                            <div class="lista__productos">
+                                
+                            </div>
+
+                            <button id="comprar__carrito" class="button__compra">Comprar</button>
+                            <button id="vaciar__carrito" class="button__vaciar__carrito">Vaciar carrito</button>
+                        </div>
+                    </a>
+                </nav>
+            </div>
         </ul>
+</nav>
 </header>
 
 <body id="body">
@@ -80,21 +99,25 @@
         un buen servicio.</p>
     </div>
 </div>
-
-<!--Contenedor de productos #1-->
 <br><br>
+<div class="title__productos">
+    <h2>Productos que te pueden interesar</h2>
+</div>
+<br>
+<div id="lista_de_productos">
+<!--Contenedor de productos #1-->
 <div id="productos" class="contenedor-productos">
         
     <div class="apartado__producto">
         <img src="images_products/camiseta_cuello_en_V.jpg" alt="camisa gris" class="apartado__producto__img">
         <div class="apartado__producto__info">
             <div class="apartado__producto__info__caract">
-                <p class="apartado__producto__texto"><strong>Camiseta cuello en V</strong></p>
+                <h4 class="apartado__producto__texto">Bermuda de Jean</h4>
                 <p class="apartado__producto__texto">Precio: 54.000</p>
             </div>
 
             <div class="apartado__producto__info__button">
-                <button onclick="agregarProductoCarrito('1')" class="button__carrito">
+                <button class="button__carrito" data-id="1">
                     <img src="image/carrito nuevo.png" alt="carrito" width="20px">
                 </button>
             </div>
@@ -105,12 +128,12 @@
         <img src="images_products/buzo_beige.jpg" alt="Buzo beige" class="apartado__producto__img">
         <div class="apartado__producto__info">
             <div class="apartado__producto__info__caract">    
-                <p class="apartado__producto__texto"><strong>Camiseta Negra</strong></p>
+                <h4 class="apartado__producto__texto">Bermuda de Jean</h4>
                 <p class="apartado__producto__texto">Precio: 60.000</p>
             </div>
 
             <div class="apartado__producto__info__button">
-                <button onclick="agregarProductoCarrito('2')" class="button__carrito">
+                <button class="button__carrito" data-id="2">
                     <img src="image/carrito nuevo.png" alt="carrito" width="20px">
                 </button>
             </div>
@@ -121,12 +144,12 @@
         <img src="images_products/pantalon_botacampana.jpg" alt="pantalon botacampana" class="apartado__producto__img">
         <div class="apartado__producto__info">
             <div class="apartado__producto__info__caract"> 
-                <p class="apartado__producto__texto"><strong>Pantalon Botacampana</strong></p>
+                <h4 class="apartado__producto__texto">Bermuda de Jean</h4>
                 <p class="apartado__producto__texto">Precio: 95.600</p>
             </div>
 
             <div class="apartado__producto__info__button">
-                <button onclick="agregarProductoCarrito('3')" class="button__carrito">
+                <button class="button__carrito" data-id="3">
                     <img src="image/carrito nuevo.png" alt="carrito" width="20px">
                 </button>
             </div>
@@ -137,12 +160,12 @@
         <img src="images_products/camiseta_negra.jpg" alt="Camisa negra" class="apartado__producto__img">
         <div class="apartado__producto__info">
             <div class="apartado__producto__info__caract">
-                <p class="apartado__producto__texto"><strong>Blusa sin Mangas</strong></p>
+                <h4 class="apartado__producto__texto">Bermuda de Jean</h4>
                 <p class="apartado__producto__texto">Precio: 105.750</p>
             </div>
 
             <div class="apartado__producto__info__button">
-                <button onclick="agregarProductoCarrito('4')" class="button__carrito">
+                <button class="button__carrito" data-id="4">
                     <img src="image/carrito nuevo.png" alt="carrito" width="20px">
                 </button>
             </div>
@@ -159,12 +182,12 @@
         <img src="images_products/camiseta_cuello_en_V.jpg" alt="camisa gris" class="apartado__producto__img">
         <div class="apartado__producto__info">
             <div class="apartado__producto__info__caract">
-                <p class="apartado__producto__texto"><strong>Camiseta cuello en V</strong></p>
+                <h4 class="apartado__producto__texto">Bermuda de Jean</h4>
                 <p class="apartado__producto__texto">Precio: 54.000</p>
             </div>
 
             <div class="apartado__producto__info__button">
-                <button onclick="agregarProductoCarrito('5')" class="button__carrito">
+                <button class="button__carrito" data-id="5">
                     <img src="image/carrito nuevo.png" alt="carrito" width="20px">
                 </button>
             </div>
@@ -175,12 +198,12 @@
         <img src="images_products/buzo_beige.jpg" alt="Buzo beige" class="apartado__producto__img">
         <div class="apartado__producto__info">
             <div class="apartado__producto__info__caract">
-                <p class="apartado__producto__texto"><strong>Camiseta Negra</strong></p>
+                <h4 class="apartado__producto__texto">Bermuda de Jean</h4>
                 <p class="apartado__producto__texto">Precio: 60.000</p>
             </div>
 
             <div class="apartado__producto__info__button">   
-                <button onclick="agregarProductoCarrito('6')" class="button__carrito">
+                <button class="button__carrito" data-id="6">
                     <img src="image/carrito nuevo.png" alt="carrito" width="20px">
                 </button>
             </div>
@@ -191,12 +214,12 @@
         <img src="images_products/blusa_con_chaqueta_sin_mangas.jpg" alt="blusa" class="apartado__producto__img">
         <div class="apartado__producto__info">
             <div class="apartado__producto__info__caract">
-                <p class="apartado__producto__texto"><strong>Blusa sin Mangas</strong></p>
+                <h4 class="apartado__producto__texto">Bermuda de Jean</h4>
                 <p class="apartado__producto__texto">Precio: 105.750</p>
             </div>
 
             <div class="apartado__producto__info__button">
-                <button onclick="agregarProductoCarrito('7')" class="button__carrito">
+                <button class="button__carrito" data-id="7">
                     <img src="image/carrito nuevo.png" alt="carrito" width="20px">
                 </button>
             </div>
@@ -207,12 +230,12 @@
         <img src="images_products/bermuda_jean.jpg" alt="bermuda jean" class="apartado__producto__img">
         <div class="apartado__producto__info">
             <div class="apartado__producto__info__caract">
-                <p class="apartado__producto__texto"><strong>Bermuda de Jean</strong></p>
+                <h4 class="apartado__producto__texto">Bermuda de Jean</h4>
                 <p class="apartado__producto__texto">Precio: 79.990</p>
             </div>
 
             <div class="apartado__producto__info__button">
-                <button onclick="agregarProductoCarrito('8')" class="button__carrito">
+                <button class="button__carrito" data-id="8">
                     <img src="image/carrito nuevo.png" alt="carrito" width="20px">
                 </button>
             </div>
@@ -222,19 +245,19 @@
 </div>
 <!--fin del contenedor de productos #2-->
 <br>
-<!--Contenedor de productos #3 - en fase de prueba-->
+<!--Contenedor de productos #3 carrusel-->
 <div  id="productos" class="contenedor_carrusel">
 
     <div class="apartado__carrusel__producto">
-        <img src="images_products/bermuda_jean.jpg" alt="bermuda jean" class="apartado__carrusel__producto__img">
+        <img src="images_products/Gorra__blanca.jpg" alt="bermuda jean" class="apartado__carrusel__producto__img">
         <div class="apartado__carrusel__producto__info">
             <div class="apartado__carrusel__producto__info__caract">
-                <p class="apartado__carrusel__producto__texto"><strong>Bermuda</strong></p>
+                <h4 class="apartado__producto__texto">Bermuda de Jean</h4>
                 <p class="apartado__carrusel__producto__texto"><b>Precio:</b> 79.990</p>
             </div>
 
             <div class="apartado__producto__carrusel__button"> 
-                <button onclick="agregarProductoCarrito('9')" class="button__carrito">
+                <button class="button__carrito" data-id="9">
                     <img src="image/carrito nuevo.png" alt="carrito" width="20px">
                 </button>
             </div>
@@ -245,12 +268,12 @@
         <img src="images_products/camiseta_negra.jpg" alt="Camisa negra" class="apartado__carrusel__producto__img">
         <div class="apartado__carrusel__producto__info">
             <div class="apartado__carrusel__producto__info__caract">
-                <p class="apartado__carrusel__producto__texto"><strong>Pantalon</strong></p>
+                <h4 class="apartado__producto__texto">Bermuda de Jean</h4>
                 <p class="apartado__carrusel__producto__texto"><b>Precio:</b> 95.600</p>
             </div>
 
             <div class="apartado__producto__carrusel__button"> 
-                <button onclick="agregarProductoCarrito('10')" class="button__carrito">
+                <button class="button__carrito" data-id="10">
                     <img src="image/carrito nuevo.png" alt="carrito" width="20px">
                 </button>
             </div>
@@ -261,12 +284,12 @@
         <img src="images_products/camiseta_cuello_en_V.jpg" alt="camisa gris" class="apartado__carrusel__producto__img">
         <div class="apartado__carrusel__producto__info">
             <div class="apartado__carrusel__producto__info__caract">
-                <p class="apartado__carrusel__producto__texto"><strong>Camiseta</strong></p>
+                <h4 class="apartado__producto__texto">Bermuda de Jean</h4>
                 <p class="apartado__carrusel__producto__texto"><b>Precio:</b> 54.000</p>
             </div>
 
             <div class="apartado__producto__carrusel__button"> 
-                <button onclick="agregarProductoCarrito('11')" class="button__carrito">
+                <button class="button__carrito" data-id="11">
                     <img src="image/carrito nuevo.png" alt="carrito" width="20px">
                 </button>
             </div>
@@ -274,61 +297,31 @@
     </div>
 
     <div class="apartado__carrusel__producto">
-        <img src="images_products/buzo_beige.jpg" alt="Buzo beige" class="apartado__carrusel__producto__img">
+        <img src="images_products/Sombrero_pescador_beige.jpg" alt="Buzo beige" class="apartado__carrusel__producto__img">
         <div class="apartado__carrusel__producto__info">
             <div class="apartado__carrusel__producto__info__caract">
-                <p class="apartado__carrusel__producto__texto"><strong>Camiseta</strong></p>
+                <h4 class="apartado__producto__texto">Bermuda de Jean</h4>
                 <p class="apartado__carrusel__producto__texto"><b>Precio:</b> 60.000</p>
             </div>
 
             <div class="apartado__producto__carrusel__button"> 
-                <button onclick="agregarProductoCarrito('12')" class="button__carrito">
+                <button class="button__carrito" data-id="12">
                     <img src="image/carrito nuevo.png" alt="carrito" width="20px">
                 </button>
             </div>
         </div>
     </div> 
-    <div class="apartado__carrusel__producto">
-        <img src="images_products/bermuda_jean.jpg" alt="bermuda jean" class="apartado__carrusel__producto__img">
-        <div class="apartado__carrusel__producto__info">
-            <div class="apartado__carrusel__producto__info__caract">
-                <p class="apartado__carrusel__producto__texto"><strong>Bermuda</strong></p>
-                <p class="apartado__carrusel__producto__texto"><b>Precio:</b> 79.990</p>
-            </div>
-
-            <div class="apartado__producto__carrusel__button"> 
-                <button onclick="agregarProductoCarrito('13')" class="button__carrito">
-                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
-                </button>
-            </div>
-        </div>
-    </div>
 
     <div class="apartado__carrusel__producto">
-        <img src="images_products/camiseta_negra.jpg" alt="Camisa negra" class="apartado__carrusel__producto__img">
+        <img src="images_products/Gorra_negra.jpg" alt="Camisa negra" class="apartado__carrusel__producto__img">
         <div class="apartado__carrusel__producto__info">
             <div class="apartado__carrusel__producto__info__caract">
-                <p class="apartado__carrusel__producto__texto"><strong>Pantalon</strong></p>
+                <h4 class="apartado__producto__texto">Bermuda de Jean</h4>
                 <p class="apartado__carrusel__producto__texto"><b>Precio:</b> 95.600</p>
             </div>
 
             <div class="apartado__producto__carrusel__button"> 
-                <button onclick="agregarProductoCarrito('14')" class="button__carrito">
-                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
-                </button>
-            </div>
-        </div>
-    </div>
-    <div class="apartado__carrusel__producto">
-        <img src="images_products/camiseta_negra.jpg" alt="Camisa negra" class="apartado__carrusel__producto__img">
-        <div class="apartado__carrusel__producto__info">
-            <div class="apartado__carrusel__producto__info__caract">
-                <p class="apartado__carrusel__producto__texto"><strong>Pantalon</strong></p>
-                <p class="apartado__carrusel__producto__texto"><b>Precio:</b> 95.600</p>
-            </div>
-
-            <div class="apartado__producto__carrusel__button"> 
-                <button onclick="agregarProductoCarrito('15')" class="button__carrito">
+                <button class="button__carrito" data-id="13">
                     <img src="image/carrito nuevo.png" alt="carrito" width="20px">
                 </button>
             </div>
@@ -339,12 +332,12 @@
         <img src="images_products/camiseta_cuello_en_V.jpg" alt="camisa gris" class="apartado__carrusel__producto__img">
         <div class="apartado__carrusel__producto__info">
             <div class="apartado__carrusel__producto__info__caract">
-                <p class="apartado__carrusel__producto__texto"><strong>Camiseta</strong></p>
+                <h4 class="apartado__producto__texto">Bermuda de Jean</h4>
                 <p class="apartado__carrusel__producto__texto"><b>Precio:</b> 54.000</p>
             </div>
 
             <div class="apartado__producto__carrusel__button"> 
-                <button onclick="agregarProductoCarrito('16')" class="button__carrito">
+                <button class="button__carrito" data-id="14">
                     <img src="image/carrito nuevo.png" alt="carrito" width="20px">
                 </button>
             </div>
@@ -354,12 +347,12 @@
         <img src="images_products/bermuda_jean.jpg" alt="bermuda jean" class="apartado__carrusel__producto__img">
         <div class="apartado__carrusel__producto__info">
             <div class="apartado__carrusel__producto__info__caract">
-                <p class="apartado__carrusel__producto__texto"><strong>Bermuda</strong></p>
+                <h4 class="apartado__producto__texto">Bermuda de Jean</h4>
                 <p class="apartado__carrusel__producto__texto"><b>Precio:</b> 79.990</p>
             </div>
 
             <div class="apartado__producto__carrusel__button"> 
-                <button onclick="agregarProductoCarrito('17')" class="button__carrito">
+                <button class="button__carrito" data-id="15">
                     <img src="image/carrito nuevo.png" alt="carrito" width="20px">
                 </button>
             </div>
@@ -367,22 +360,26 @@
     </div>
 
     <div class="apartado__carrusel__producto">
-        <img src="images_products/camiseta_negra.jpg" alt="Camisa negra" class="apartado__carrusel__producto__img">
+        <img src="images_products/Sombrero_pescador_negro.jpg" alt="Camisa negra" class="apartado__carrusel__producto__img">
         <div class="apartado__carrusel__producto__info">
             <div class="apartado__carrusel__producto__info__caract">
-                <p class="apartado__carrusel__producto__texto"><strong>Pantalon</strong></p>
+                <h4 class="apartado__producto__texto">Bermuda de Jean</h4>
                 <p class="apartado__carrusel__producto__texto"><b>Precio:</b> 95.600</p>
             </div>
 
             <div class="apartado__producto__carrusel__button"> 
-                <button onclick="agregarProductoCarrito('18')" class="button__carrito">
+                <button class="button__carrito" data-id="16">
                     <img src="image/carrito nuevo.png" alt="carrito" width="20px">
                 </button>
             </div>
         </div>
     </div>
 </div>
-<!--fin del contenedor de productos #3-->
+<!--fin del contenedor de productos #3 carrusel-->
+<br><br><br>
+<div class="title__productos_2">
+    <h2>Más productos</h2>
+</div>
 <br>
 <!--Contenedor de productos #4-->
 <div  id="productos" class="contenedor-productos">
@@ -391,12 +388,12 @@
         <img src="images_products/bermuda_jean.jpg" alt="bermuda jean" class="apartado__producto__img">
         <div class="apartado__producto__info">
             <div class="apartado__producto__info__caract">
-                <p class="apartado__producto__texto"><strong>Bermuda de Jean</strong></p>
+                <h4 class="apartado__producto__texto">Bermuda de Jean</h4>
                 <p class="apartado__producto__texto">Precio: 79.990</p>
             </div>
 
             <div class="apartado__producto__info__button"> 
-                <button onclick="agregarProductoCarrito('19')" class="button__carrito">
+                <button class="button__carrito" data-id="17">
                     <img src="image/carrito nuevo.png" alt="carrito" width="20px">
                 </button>
             </div>
@@ -407,12 +404,12 @@
         <img src="images_products/camiseta_negra.jpg" alt="Camisa negra" class="apartado__producto__img">
         <div class="apartado__producto__info">
             <div class="apartado__producto__info__caract">
-                <p class="apartado__producto__texto"><strong>Pantalon Botacampana</strong></p>
+                <h4 class="apartado__producto__texto">Bermuda de Jean</h4>
                 <p class="apartado__producto__texto">Precio: 95.600</p>
             </div>
 
             <div class="apartado__producto__info__button"> 
-                <button onclick="agregarProductoCarrito('20')" class="button__carrito">
+                <button class="button__carrito" data-id="18">
                     <img src="image/carrito nuevo.png" alt="carrito" width="20px">
                 </button>
             </div>
@@ -423,12 +420,12 @@
         <img src="images_products/camiseta_cuello_en_V.jpg" alt="camisa gris" class="apartado__producto__img">
         <div class="apartado__producto__info">
             <div class="apartado__producto__info__caract">
-                <p class="apartado__producto__texto"><strong>Camiseta cuello en V</strong></p>
+                <h4 class="apartado__producto__texto">Camiseta</h4>
                 <p class="apartado__producto__texto">Precio: 54.000</p>
             </div>
 
             <div class="apartado__producto__info__button">
-                <button onclick="agregarProductoCarrito('21')" class="button__carrito">
+                <button class="button__carrito" data-id="19">
                     <img src="image/carrito nuevo.png" alt="carrito" width="20px">
                 </button>
             </div>
@@ -439,12 +436,12 @@
         <img src="images_products/buzo_beige.jpg" alt="Buzo beige" class="apartado__producto__img">
         <div class="apartado__producto__info">
             <div class="apartado__producto__info__caract">
-                <p class="apartado__producto__texto"><strong>Camiseta Negra</strong></p>
+                <h4 class="apartado__producto__texto">Buzo</h4>
                 <p class="apartado__producto__texto">Precio: 60.000</p>
             </div>
 
             <div class="apartado__producto__info__button">
-                <button onclick="agregarProductoCarrito('22')" class="button__carrito">
+                <button class="button__carrito" data-id="20">
                     <img src="image/carrito nuevo.png" alt="carrito" width="20px">
                 </button>
             </div>
@@ -460,12 +457,12 @@
         <img src="images_products/bermuda_jean.jpg" alt="bermuda jean" class="apartado__producto__img">
         <div class="apartado__producto__info">
             <div class="apartado__producto__info__caract">
-                <p class="apartado__producto__texto"><strong>Bermuda de Jean</strong></p>
+                <h4 class="apartado__producto__texto">Bermuda</h4>
                 <p class="apartado__producto__texto">Precio: 79.990</p>
             </div>
 
             <div class="apartado__producto__info__button"> 
-                <button onclick="agregarProductoCarrito('23')" class="button__carrito">
+                <button class="button__carrito" data-id="21">
                     <img src="image/carrito nuevo.png" alt="carrito" width="20px">
                 </button>
             </div>
@@ -476,12 +473,12 @@
         <img src="images_products/camiseta_negra.jpg" alt="Camisa negra" class="apartado__producto__img">
         <div class="apartado__producto__info">
             <div class="apartado__producto__info__caract">
-                <p class="apartado__producto__texto"><strong>Pantalon Botacampana</strong></p>
+                <h4 class="apartado__producto__texto">Camiseta</h4>
                 <p class="apartado__producto__texto">Precio: 95.600</p>
             </div>
 
             <div class="apartado__producto__info__button"> 
-                <button onclick="agregarProductoCarrito('24')" class="button__carrito">
+                <button class="button__carrito" data-id="22">
                     <img src="image/carrito nuevo.png" alt="carrito" width="20px">
                 </button>
             </div>
@@ -492,12 +489,12 @@
         <img src="images_products/camiseta_cuello_en_V.jpg" alt="camisa gris" class="apartado__producto__img">
         <div class="apartado__producto__info">
             <div class="apartado__producto__info__caract">
-                <p class="apartado__producto__texto"><strong>Camiseta cuello en V</strong></p>
+                <h4 class="apartado__producto__texto">Camiseta</h4>
                 <p class="apartado__producto__texto">Precio: 54.000</p>
             </div>
 
             <div class="apartado__producto__info__button">
-                <button onclick="agregarProductoCarrito('25')" class="button__carrito">
+                <button class="button__carrito" data-id="23">
                     <img src="image/carrito nuevo.png" alt="carrito" width="20px">
                 </button>
             </div>
@@ -508,12 +505,12 @@
         <img src="images_products/buzo_beige.jpg" alt="Buzo beige" class="apartado__producto__img">
         <div class="apartado__producto__info">
             <div class="apartado__producto__info__caract">
-                <p class="apartado__producto__texto"><strong>Camiseta Negra</strong></p>
+                <h4 class="apartado__producto__texto">Buzo</h4>
                 <p class="apartado__producto__texto">Precio: 60.000</p>
             </div>
 
             <div class="apartado__producto__info__button">
-                <button onclick="agregarProductoCarrito('26')" class="button__carrito">
+                <button class="button__carrito" data-id="24">
                     <img src="image/carrito nuevo.png" alt="carrito" width="20px">
                 </button>
             </div>
@@ -521,7 +518,140 @@
     </div>
 </div>
 <!--fin del contenedor de productos #5-->
+<br>
+<!--Contenedor de productos #6 carrusel-->
+<div  id="productos" class="contenedor_carrusel">
 
+    <div class="apartado__carrusel__producto">
+        <img src="images_products/Sombrero_azul.jpg" alt="bermuda jean" class="apartado__carrusel__producto__img">
+        <div class="apartado__carrusel__producto__info">
+            <div class="apartado__carrusel__producto__info__caract">
+                <h4 class="apartado__producto__texto">Sombrero</h4>
+                <p class="apartado__carrusel__producto__texto"><b>Precio:</b> 79.990</p>
+            </div>
+
+            <div class="apartado__producto__carrusel__button"> 
+                <button class="button__carrito" data-id="25">
+                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="apartado__carrusel__producto">
+        <img src="images_products/camiseta_negra.jpg" alt="Camisa negra" class="apartado__carrusel__producto__img">
+        <div class="apartado__carrusel__producto__info">
+            <div class="apartado__carrusel__producto__info__caract">
+                <h4 class="apartado__producto__texto">Camiseta</h4>
+                <p class="apartado__carrusel__producto__texto"><b>Precio:</b> 95.600</p>
+            </div>
+
+            <div class="apartado__producto__carrusel__button"> 
+                <button class="button__carrito" data-id="26">
+                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="apartado__carrusel__producto">
+        <img src="images_products/camiseta_cuello_en_V.jpg" alt="camisa gris" class="apartado__carrusel__producto__img">
+        <div class="apartado__carrusel__producto__info">
+            <div class="apartado__carrusel__producto__info__caract">
+                <h4 class="apartado__producto__texto">Camiseta</h4>
+                <p class="apartado__carrusel__producto__texto"><b>Precio:</b> 54.000</p>
+            </div>
+
+            <div class="apartado__producto__carrusel__button"> 
+                <button class="button__carrito" data-id="27">
+                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="apartado__carrusel__producto">
+        <img src="images_products/buzo_beige.jpg" alt="Buzo beige" class="apartado__carrusel__producto__img">
+        <div class="apartado__carrusel__producto__info">
+            <div class="apartado__carrusel__producto__info__caract">
+                <h4 class="apartado__producto__texto">Buzon</h4>
+                <p class="apartado__carrusel__producto__texto"><b>Precio:</b> 60.000</p>
+            </div>
+
+            <div class="apartado__producto__carrusel__button"> 
+                <button class="button__carrito" data-id="28">
+                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
+                </button>
+            </div>
+        </div>
+    </div> 
+    <div class="apartado__carrusel__producto">
+        <img src="images_products/Sombrero_morado.jpg" alt="bermuda jean" class="apartado__carrusel__producto__img">
+        <div class="apartado__carrusel__producto__info">
+            <div class="apartado__carrusel__producto__info__caract">
+                <h4 class="apartado__producto__texto">Sombrero</h4>
+                <p class="apartado__carrusel__producto__texto"><b>Precio:</b> 79.990</p>
+            </div>
+
+            <div class="apartado__producto__carrusel__button"> 
+                <button class="button__carrito" data-id="29">
+                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="apartado__carrusel__producto">
+        <img src="images_products/Sombrero__beige_claro.jpg" alt="Camisa negra" class="apartado__carrusel__producto__img">
+        <div class="apartado__carrusel__producto__info">
+            <div class="apartado__carrusel__producto__info__caract">
+                <h4 class="apartado__producto__texto">Sombrero</h4>
+                <p class="apartado__carrusel__producto__texto"><b>Precio:</b> 95.600</p>
+            </div>
+
+            <div class="apartado__producto__carrusel__button"> 
+                <button class="button__carrito" data-id="30">
+                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="apartado__carrusel__producto">
+        <img src="images_products/camiseta_negra.jpg" alt="Camisa negra" class="apartado__carrusel__producto__img">
+        <div class="apartado__carrusel__producto__info">
+            <div class="apartado__carrusel__producto__info__caract">
+                <h4 class="apartado__producto__texto">camiseta negra</h4>
+                <p class="apartado__carrusel__producto__texto"><b>Precio:</b> 95.600</p>
+            </div>
+
+            <div class="apartado__producto__carrusel__button"> 
+                <button class="button__carrito" data-id="31">
+                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="apartado__carrusel__producto">
+        <img src="images_products/Sombrero_gris.jpg" alt="camisa gris" class="apartado__carrusel__producto__img">
+        <div class="apartado__carrusel__producto__info">
+            <div class="apartado__carrusel__producto__info__caract">
+                <h4 class="apartado__producto__texto">Sombrero</h4>
+                <p class="apartado__carrusel__producto__texto"><b>Precio:</b> 54.000</p>
+            </div>
+
+            <div class="apartado__producto__carrusel__button"> 
+                <button class="button__carrito" data-id="32">
+                    <img src="image/carrito nuevo.png" alt="carrito" width="20px">
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--fin del contenedor de productos #9 carrusel-->
+</div>
+<br>
 <section id="reseñas" class="reseñas">
     <div class="titulo__reseñas">
         <h2 id="titulo__h2">Reseñas de clientes</h2>
@@ -531,9 +661,11 @@
 <section class="contenido__reseñas">
 
     <div class="contenedor__reseñas">
-        <p class="contenedor__reseñas__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Laboriosam quaerat nam vero error quam fuga repellendus exercitationem ducimus, dolores 
-            perferendis, ipsa dolorum? Sequi, cum accusamus. Voluptates perferendis modi minima velit.</p>
+        <p class="contenedor__reseñas__p">Productos de muy buena calidad, soy cliente desde hace ya bastante tiempo y no he
+            tenido alguna queja con respecto a algún servicio o producto.
+            Desde la misma pagina web se puede ver la buena calidad y durabilidad de sus productos. Y en cuanto a sus servicios de envio 
+            son muy eficaces y puntuales con el tiempo estipulado que da la empresa.
+        </p>
         <div class="contenedor__reseñas__contenido">
             <div class="contenedor__reseñas__img">
                 <img src="image/icono registro nuevo.png" alt="imagen_cliente" id="imagen__reseña">
@@ -541,7 +673,7 @@
 
             <div class="contenedor__reseñas__texto">
                 <h4 id="encabezado__reseña_h4">Pablo Hernandez</h4>
-                <h5 id="encabezado__reseña_h5">Clothes blogger</h5>
+                <h5 id="encabezado__reseña_h5">Cliente concurrido</h5>
                 <div class="contenedor__reseñas__ratings">
                     <a href="#" class="stars">&#9733;</a>
                     <a href="#" class="stars">&#9733;</a>
@@ -554,9 +686,33 @@
     </div>
 
     <div class="contenedor__reseñas">
-        <p class="contenedor__reseñas__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Laboriosam quaerat nam vero error quam fuga repellendus exercitationem ducimus, dolores 
-            perferendis, ipsa dolorum? Sequi, cum accusamus. Voluptates perferendis modi minima velit.</p>
+        <p class="contenedor__reseñas__p">Los productos no están nada mal, pero me gustaria que hubiera más variedad
+            de productos para una mayor seleccion. 
+            Los servicios al cliente y la eficacia de sus entregas me parecen buenas, pero creo que se puede mejorar.
+        </p>
+        <div class="contenedor__reseñas__contenido">
+            <div class="contenedor__reseñas__img">
+                <img src="image/icono registro nuevo.png" alt="imagen_cliente" id="imagen__reseña">
+            </div>
+
+            <div class="contenedor__reseñas__texto">
+                <h4 id="encabezado__reseña_h4">Camila Nuñez</h4>
+                <h5 id="encabezado__reseña_h5">Cliente</h5>
+                <div class="contenedor__reseñas__ratings">
+                    <a href="#" class="stars">&#9733;</a>
+                    <a href="#" class="stars">&#9733;</a>
+                    <a href="#" class="stars">&#9733;</a>
+                    <a href="#" class="stars">&#9733;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor__reseñas">
+        <p class="contenedor__reseñas__p">Tengo ciertos problemas a la hora de recibir mis pedidos, ya me ha pasado 
+            varias veces que lo que pido no me llega a tiempo y no hablo de 1 o 2 dias hablo de mas de 4 en algunas 
+            ocaciones, entonces ahi en esa parte me falla un poco su servicio de eentrega.
+        </p>
         <div class="contenedor__reseñas__contenido">
             <div class="contenedor__reseñas__img">
                 <img src="image/icono registro nuevo.png" alt="imagen_cliente" id="imagen__reseña">
@@ -568,6 +724,25 @@
                 <div class="contenedor__reseñas__ratings">
                     <a href="#" class="stars">&#9733;</a>
                     <a href="#" class="stars">&#9733;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor__reseñas">
+        <p class="contenedor__reseñas__p">Algunos de sus productos llegan a mi hogar maltratados y en ocaciones 
+            mal empaquetados, pero lo bueno es que el producto en cuestion no viene con un algún daño, pero me parece 
+            un tanto mal en cuestion de presentación entregar un producto con un empaque tan mal tratado.
+        </p>
+        <div class="contenedor__reseñas__contenido">
+            <div class="contenedor__reseñas__img">
+                <img src="image/icono registro nuevo.png" alt="imagen_cliente" id="imagen__reseña">
+            </div>
+
+            <div class="contenedor__reseñas__texto">
+                <h4 id="encabezado__reseña_h4">Jairo Torres</h4>
+                <h5 id="encabezado__reseña_h5">Nuevo cliente</h5>
+                <div class="contenedor__reseñas__ratings">
                     <a href="#" class="stars">&#9733;</a>
                     <a href="#" class="stars">&#9733;</a>
                     <a href="#" class="stars">&#9733;</a>
@@ -577,155 +752,42 @@
     </div>
 
     <div class="contenedor__reseñas">
-        <p class="contenedor__reseñas__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Laboriosam quaerat nam vero error quam fuga repellendus exercitationem ducimus, dolores 
-            perferendis, ipsa dolorum? Sequi, cum accusamus. Voluptates perferendis modi minima velit.</p>
+        <p class="contenedor__reseñas__p">Los productos y servicios de entrega estan excelentes, cumplen con lo que 
+            ofrecen. Pero mi queja está vez es por los servicios al cliente, estos me parecen muy tardados en conseguir 
+            una respuesta, en muchos casos que he tenido se me han presentado incovenientes para comunicarme con una 
+            de sus lineas telefonicas y poder hablar con un asesor de sus servicios.
+        </p>
         <div class="contenedor__reseñas__contenido">
             <div class="contenedor__reseñas__img">
                 <img src="image/icono registro nuevo.png" alt="imagen_cliente" id="imagen__reseña">
             </div>
 
             <div class="contenedor__reseñas__texto">
-                <h4 id="encabezado__reseña_h4">Pablo Hernandez</h4>
-                <h5 id="encabezado__reseña_h5">Clothes blogger</h5>
+                <h4 id="encabezado__reseña_h4">Julio Cardenas</h4>
+                <h5 id="encabezado__reseña_h5">Cliente concurrido</h5>
                 <div class="contenedor__reseñas__ratings">
                     <a href="#" class="stars">&#9733;</a>
                     <a href="#" class="stars">&#9733;</a>
                     <a href="#" class="stars">&#9733;</a>
                     <a href="#" class="stars">&#9733;</a>
-                    <a href="#" class="stars">&#9733;</a>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="contenedor__reseñas">
-        <p class="contenedor__reseñas__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Laboriosam quaerat nam vero error quam fuga repellendus exercitationem ducimus, dolores 
-            perferendis, ipsa dolorum? Sequi, cum accusamus. Voluptates perferendis modi minima velit.</p>
+        <p class="contenedor__reseñas__p">La pagina está excelente es muy intuitiva y uno no se pierde para encontrar 
+            lo que uno busca en ella, sus productos son excelentes y de buena calidad. 
+            Y si hablamos de sus servicios a el cliente, me parece eficaz y claro. 
+        </p>
         <div class="contenedor__reseñas__contenido">
             <div class="contenedor__reseñas__img">
                 <img src="image/icono registro nuevo.png" alt="imagen_cliente" id="imagen__reseña">
             </div>
 
             <div class="contenedor__reseñas__texto">
-                <h4 id="encabezado__reseña_h4">Pablo Hernandez</h4>
-                <h5 id="encabezado__reseña_h5">Clothes blogger</h5>
-                <div class="contenedor__reseñas__ratings">
-                    <a href="#" class="stars">&#9733;</a>
-                    <a href="#" class="stars">&#9733;</a>
-                    <a href="#" class="stars">&#9733;</a>
-                    <a href="#" class="stars">&#9733;</a>
-                    <a href="#" class="stars">&#9733;</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="contenedor__reseñas">
-        <p class="contenedor__reseñas__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Laboriosam quaerat nam vero error quam fuga repellendus exercitationem ducimus, dolores 
-            perferendis, ipsa dolorum? Sequi, cum accusamus. Voluptates perferendis modi minima velit.</p>
-        <div class="contenedor__reseñas__contenido">
-            <div class="contenedor__reseñas__img">
-                <img src="image/icono registro nuevo.png" alt="imagen_cliente" id="imagen__reseña">
-            </div>
-
-            <div class="contenedor__reseñas__texto">
-                <h4 id="encabezado__reseña_h4">Pablo Hernandez</h4>
-                <h5 id="encabezado__reseña_h5">Clothes blogger</h5>
-                <div class="contenedor__reseñas__ratings">
-                    <a href="#" class="stars">&#9733;</a>
-                    <a href="#" class="stars">&#9733;</a>
-                    <a href="#" class="stars">&#9733;</a>
-                    <a href="#" class="stars">&#9733;</a>
-                    <a href="#" class="stars">&#9733;</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="contenedor__reseñas">
-        <p class="contenedor__reseñas__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Laboriosam quaerat nam vero error quam fuga repellendus exercitationem ducimus, dolores 
-            perferendis, ipsa dolorum? Sequi, cum accusamus. Voluptates perferendis modi minima velit.</p>
-        <div class="contenedor__reseñas__contenido">
-            <div class="contenedor__reseñas__img">
-                <img src="image/icono registro nuevo.png" alt="imagen_cliente" id="imagen__reseña">
-            </div>
-
-            <div class="contenedor__reseñas__texto">
-                <h4 id="encabezado__reseña_h4">Pablo Hernandez</h4>
-                <h5 id="encabezado__reseña_h5">Clothes blogger</h5>
-                <div class="contenedor__reseñas__ratings">
-                    <a href="#" class="stars">&#9733;</a>
-                    <a href="#" class="stars">&#9733;</a>
-                    <a href="#" class="stars">&#9733;</a>
-                    <a href="#" class="stars">&#9733;</a>
-                    <a href="#" class="stars">&#9733;</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="contenedor__reseñas">
-        <p class="contenedor__reseñas__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Laboriosam quaerat nam vero error quam fuga repellendus exercitationem ducimus, dolores 
-            perferendis, ipsa dolorum? Sequi, cum accusamus. Voluptates perferendis modi minima velit.</p>
-        <div class="contenedor__reseñas__contenido">
-            <div class="contenedor__reseñas__img">
-                <img src="image/icono registro nuevo.png" alt="imagen_cliente" id="imagen__reseña">
-            </div>
-
-            <div class="contenedor__reseñas__texto">
-                <h4 id="encabezado__reseña_h4">Pablo Hernandez</h4>
-                <h5 id="encabezado__reseña_h5">Clothes blogger</h5>
-                <div class="contenedor__reseñas__ratings">
-                    <a href="#" class="stars">&#9733;</a>
-                    <a href="#" class="stars">&#9733;</a>
-                    <a href="#" class="stars">&#9733;</a>
-                    <a href="#" class="stars">&#9733;</a>
-                    <a href="#" class="stars">&#9733;</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="contenedor__reseñas">
-        <p class="contenedor__reseñas__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Laboriosam quaerat nam vero error quam fuga repellendus exercitationem ducimus, dolores 
-            perferendis, ipsa dolorum? Sequi, cum accusamus. Voluptates perferendis modi minima velit.</p>
-        <div class="contenedor__reseñas__contenido">
-            <div class="contenedor__reseñas__img">
-                <img src="image/icono registro nuevo.png" alt="imagen_cliente" id="imagen__reseña">
-            </div>
-
-            <div class="contenedor__reseñas__texto">
-                <h4 id="encabezado__reseña_h4">Pablo Hernandez</h4>
-                <h5 id="encabezado__reseña_h5">Clothes blogger</h5>
-                <div class="contenedor__reseñas__ratings">
-                    <a href="#" class="stars">&#9733;</a>
-                    <a href="#" class="stars">&#9733;</a>
-                    <a href="#" class="stars">&#9733;</a>
-                    <a href="#" class="stars">&#9733;</a>
-                    <a href="#" class="stars">&#9733;</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="contenedor__reseñas">
-        <p class="contenedor__reseñas__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Laboriosam quaerat nam vero error quam fuga repellendus exercitationem ducimus, dolores 
-            perferendis, ipsa dolorum? Sequi, cum accusamus. Voluptates perferendis modi minima velit.</p>
-        <div class="contenedor__reseñas__contenido">
-            <div class="contenedor__reseñas__img">
-                <img src="image/icono registro nuevo.png" alt="imagen_cliente" id="imagen__reseña">
-            </div>
-
-            <div class="contenedor__reseñas__texto">
-                <h4 id="encabezado__reseña_h4">Pablo Hernandez</h4>
-                <h5 id="encabezado__reseña_h5">Clothes blogger</h5>
+                <h4 id="encabezado__reseña_h4">Adriana Palacios</h4>
+                <h5 id="encabezado__reseña_h5">Nuevo cliente</h5>
                 <div class="contenedor__reseñas__ratings">
                     <a href="#" class="stars">&#9733;</a>
                     <a href="#" class="stars">&#9733;</a>
@@ -740,6 +802,7 @@
 
 </body>
 <br>
+<!--agregar seccion de creditos (esto es para las imagenes que utilice)-->
 <footer id="footer">
     <div class="footer-content">
 
@@ -759,11 +822,12 @@
             </a>
         </div>
     </div>
+
     <div class="footer-copyright">
         <p class="footer-copyright__text">Todos los Derechos Reservados ©</p>
     </div>
 
+    <script src="js/carrito.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/productos.js"></script>
 </footer>
 </html>

@@ -4,18 +4,56 @@
 @import 'fonts.css';
 @import 'reseñas.css';
 @import 'barra_navegacion.css';
-@import 'seccion_nosotros.css';
 @import 'productos.css';
+@import 'sign-in.css';
+@import 'login.css';
 
 
 #body{
     margin: 0px 0px 0px 0px;
+    background-color: ghostwhite;
 }
 
 
-
+/*Responsive*/
 @media screen and (max-width:480px) {
     #body{
         margin: 0px;
     }
+
+    .title__productos{
+        margin-left: 20px;
+        margin-top: 320px;
+    }
+    
+    .title__productos_2{
+        
+    }
+
+    .container__grid{
+        display: grid;
+    }
+
+    .banner__grid{
+        width: 30%;
+    }
+
+    .nosotros__grid{
+        width: 35%;
+    }
+
+    .nosotros__grid__img{
+        width: 100px;
+        height: auto;
+    }
+
+    .contenedor-productos{
+        display: grid;
+    }
+
+    .titulo__reseñas{
+        margin-right: 0px;
+    }
 }
+
+

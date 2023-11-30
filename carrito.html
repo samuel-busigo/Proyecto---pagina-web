@@ -4,7 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gyroo - Carrito</title>
+
+    <link rel="icon" href="image/Carrito_nav.png" type="image/png">
+    <link rel="stylesheet" href="style/estilosindex.css">
 </head>
+<header id="header">
+    
+    <div class="menu">
+        <!--Lineas para navegación de celular-->
+        <div class="menu-mobile">
+            <div class="menu-mobile__line"></div>
+            <div class="menu-mobile__line"></div>
+            <div class="menu-mobile__line"></div>
+        </div>
+    </div>
+        <!--Terminación de las lineas para navegación de celular-->
+
+        <ul class="navegation__list">
+            <li class="navegation__list__item">
+                <a class="navegation__list__link" href="#body">
+                    <img src="image/Icono_gyroo.png" alt="icon" width="25px">
+                </a>
+            </li>
+            <li class="navegation__list__item">
+                <a class="navegation__list__link" href="#footer">Contactanos</a>
+            </li>
+
+            <li class="navegation__list__item">
+                <a class="navegation__list__link" href="#reseñas">Reseñas</a>
+            </li>
+            
+            <li id="login_item" class="navegation__list__item_0">
+                <a class="navegation__list__link" href="sign-in.html">
+                    <img src="image/Icono_usuario.png" alt="icono_usuario" width="20px">
+                </a>
+            </li>
+
+            <li id="cerrar_sesion">
+                <a href="index.html" class="nav__list__link">
+                    <p id="cerrar_sesion__link"></p>
+                </a>
+            </li>
+            <li id="item_nombre">
+                <p id="nombre_usuario"></p>
+            </li>
+            
+
+            <li class="navegation__list__item_1">
+                <a class="navegation__list__link" href="carrito.html">
+                    <img src="image/Carrito_nav.png" alt="carrito" width="20px">
+                </a>
+            </li>
+        </ul>
+</header>
 <body>
     <h2><strong>Carrito de compras</strong></h2>
     <div id="productos-carrito">
@@ -12,6 +64,6 @@
     </div>
 
     
-    <script src=js/productos.js></script>
+    <script src=js/carrito.js></script>
 </body>
 </html>

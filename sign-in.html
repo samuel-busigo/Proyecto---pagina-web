@@ -3,68 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <title>Gyroo - Registro</title>
 
 <!--cambiar la imagen está.-->
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/5645/5645106.png" type="image/png">
-    <link rel="stylesheet" href="style/sign-in.css">
-    <link rel="stylesheet" href="style/estilosindex.css"
+    <link rel="icon" href="image/Icono_usuario.png" type="image/png">
+    <link rel="stylesheet" href="style/estilosindex.css">
 
 </head>
 <header class="header">
-<div id="nombre-empresa" class="seccion-nombre-empresa"></div>    
+<div id="nombre-empresa">    
         <center>
             <h1 class="seccion-nombre-empresa__name">Registro</h1>
         </center>
 </div>
 </header>
-<br><br>
 <body class="body"> 
 <div id="form-registro" class="formulario">   
     <form id="registro" class="form-content">
         <fieldset class="campo">
         
                 <br>
-            <label for="nombre" class="id_name">Nombres</label><br><br>
+            <label for="nombre" class="id_name">Nombres</label><br>
             <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" class="form-content__datos" required>
           
                 <br><br>
-            <label for="apellidos" class="id_last_name">Apellidos</label><br><br>
+            <label for="apellidos" class="id_last_name">Apellidos</label><br>
             <input type="text" name="apellidos" id="apellidos" placeholder="Ingrese sus apellidos" class="form-content__datos" required>
             
                 <br><br>
-            <label for="email" class="id_email">Correo electronico</label><br><br>
+            <label for="email" class="id_email">Correo electronico</label><br>
             <input type="email" name="email" id="email" placeholder="Ingrese un correo electronico" class="form-content__datos" required>
 
                 <br><br>
-            <label for="password" class="id_pass">Contraseña</label><br><br>
+            <label for="password" class="id_pass">Contraseña</label><br>
             <input type="password" name="password" id="password" placeholder="Ingrese una contraseña" class="form-content__datos" required>
 
                 <br><br>
                 
-            <label for="genero">Genero</label>
-            <input type="text" name="genero" id="genero">
-            
-                <br><br><br>
-            
-            <p>¿Ya tienes una cuenta? <a href="login.html">Inicia Sesion</a></p>
-
+            <label for="genero" id="id__genero">Genero</label>
+            <select name="genero" id="genero" class="form-content__datos__genero" required>
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+                <option value="otro">Prefiero no decirlo</option>
+            </select>
                 <br><br>
+            <p id="id__p__registro">¿Ya tienes una cuenta? <a href="login.html" id="id__link__registro">Inicia Sesion</a></p>
+                <br>
 
             <input type="submit" value="Registrarse" class="form-content__button">
            
         </fieldset>     
     </form>
 </div>
-<!--
-<label for="hombre" class="id_men">Hombre</label>
-            <input type="radio" name="hombre" id="hombre" class="form-content__datos__radio_H">
-                <br><br>
-            
-                
-            <label for="mujer" class="id_women">Mujer</label>
-            <input type="radio" name="mujer" id="mujer" class="form-content__datos__radio_M">
--->
 
     <script src="js/registro.js"></script>
 </body>

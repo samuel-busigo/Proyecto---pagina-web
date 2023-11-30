@@ -1,0 +1,66 @@
+#body__login{
+    background-color: rgb(0, 0, 0);
+}
+
+#titulo__login{
+    color: white;
+    padding-left: 580px;
+}
+
+#campo__login{
+    border-radius: 15px;
+    width: 400px;
+    margin-left: 460px;
+    margin-top: 100px;
+    border: 2px solid whitesmoke;
+}
+
+.datos__login{
+    margin: 10px 20px;
+    padding: 5px 8px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 110px;
+}
+
+#id__email{
+    color: white;
+    margin-left: 130px;
+}
+
+#id__password{
+    color: white;
+    margin-left: 155px;
+}
+
+#id__p{
+    color: white;
+    margin-left: 60px;
+}
+
+#id__link__login{
+    text-decoration: none;
+}
+
+.button__login{
+    color: black;
+    margin-left: 125px;
+    background-color: white;
+    border-color: rgb(73, 73, 73);
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline block;
+    font-size: 15px;
+    border-radius: 25px;
+    transition-duration: 0.2s;
+    margin-bottom: 10px;
+}
+
+.button__login:hover {
+    background-color: #1d1d20;
+    color: white;
+    border: 2px solid #ffffff;
+}
+
+/*Responsive*/

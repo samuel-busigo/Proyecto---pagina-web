@@ -9,9 +9,9 @@
 
 .banner__grid{
     overflow: hidden;
-    width: 405px;
+    width: 45%;
     height: 260px;
-    padding-left: 145px;
+    padding-left: 68px;
     padding-bottom: 10px;
     background-color: rgb(227, 232, 233);
     border: solid 2px gray;
@@ -26,7 +26,7 @@
 
 /*Nosotros*/
 .nosotros__grid{
-    width: 772px;
+    width: 62%;
     height: 270px;
     border: solid 2px black;
     border-radius: 15px;
@@ -35,7 +35,7 @@
 
 .nosotros__grid__QS{
     margin-left: 55px;
-    font-size: 5ch;
+    font-size: 4cqh;
 }
 
 .nosotros__grid__font{
@@ -63,3 +63,5 @@
         height: auto;
     }
 }
+
+/*Responsive*/
